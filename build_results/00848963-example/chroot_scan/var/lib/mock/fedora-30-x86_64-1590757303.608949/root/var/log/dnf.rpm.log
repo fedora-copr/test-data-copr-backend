@@ -1,0 +1,12 @@
+2020-05-29T13:01:48Z INFO --- logging initialized ---
+2020-05-29T13:01:55Z INFO --- logging initialized ---
+2020-05-29T13:01:58Z SUBDEBUG Installed: libmpc-1.1.0-3.fc30.x86_64
+2020-05-29T13:01:58Z SUBDEBUG Installed: cpp-9.3.1-2.fc30.x86_64
+2020-05-29T13:01:59Z SUBDEBUG Installed: libgomp-9.3.1-2.fc30.x86_64
+2020-05-29T13:01:59Z SUBDEBUG Installed: kernel-headers-5.6.11-100.fc30.x86_64
+2020-05-29T13:02:00Z SUBDEBUG Installed: glibc-headers-2.29-29.fc30.x86_64
+2020-05-29T13:02:00Z SUBDEBUG Installed: libxcrypt-devel-4.4.16-3.fc30.x86_64
+2020-05-29T13:02:00Z SUBDEBUG Installed: glibc-devel-2.29-29.fc30.x86_64
+2020-05-29T13:02:00Z SUBDEBUG Installed: isl-0.16.1-8.fc30.x86_64
+2020-05-29T13:02:00Z SUBDEBUG Installed: gcc-9.3.1-2.fc30.x86_64
+2020-05-29T13:02:02Z SUBDEBUG Installed: annobin-8.71-4.fc30.x86_64

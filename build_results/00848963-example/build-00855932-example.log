@@ -1,0 +1,18 @@
+[2020-05-29 13:00:28,312][  INFO][PID:1869401] Setting up builder: 54.81.35.59
+[2020-05-29 13:00:28,313][  INFO][PID:1869401] BUILDER CMD: /bin/rpm -q copr-rpmbuild
+[2020-05-29 13:00:28,586][  INFO][PID:1869401] BUILDER CMD: /usr/bin/test -f /etc/mock/fedora-30-x86_64.cfg
+[2020-05-29 13:00:28,730][  INFO][PID:1869401] Start build: BuildJob<id: 855932, owner: @copr, project: TEST1575431880356948981Project10, project_dir: TEST1575431880356948981Project10git branch: None, git hash: 40f5e8de6df1faa0c78c3869b6d30147ccf8fa57, status: 3 >
+[2020-05-29 13:00:28,731][  INFO][PID:1869401] marking build dir with build_id, 
+[2020-05-29 13:00:28,732][  INFO][PID:1869401] BUILDER CMD: copr-rpmbuild --verbose --drop-resultdir --build-id 855932 --chroot fedora-30-x86_64 --detached
+[2020-05-29 13:00:29,175][  INFO][PID:1869401] Attaching to live build log: /usr/bin/tail -F -n +0 --pid=5158 /var/lib/copr-rpmbuild/main.log
+[2020-05-29 13:02:04,797][  INFO][PID:1869401] Compressing /var/lib/copr/public_html/results/@copr/TEST1575431880356948981Project10/fedora-30-x86_64/00855932-example/builder-live.log by gzip
+[2020-05-29 13:02:04,976][  INFO][PID:1869401] rsyncing of mockbuilder@54.81.35.59:/var/lib/copr-rpmbuild/results/* started for job: BuildJob<id: 855932, owner: @copr, project: TEST1575431880356948981Project10, project_dir: TEST1575431880356948981Project10git branch: None, git hash: 40f5e8de6df1faa0c78c3869b6d30147ccf8fa57, status: 3 >
+[2020-05-29 13:02:05,146][  INFO][PID:1869401] rsyncing finished.
+[2020-05-29 13:02:05,147][  INFO][PID:1869401] Success building example
+[2020-05-29 13:02:05,147][  INFO][PID:1869401] Going to sign pkgs from source: BuildJob<id: 855932, owner: @copr, project: TEST1575431880356948981Project10, project_dir: TEST1575431880356948981Project10git branch: None, git hash: 40f5e8de6df1faa0c78c3869b6d30147ccf8fa57, status: 3 > in chroot: /var/lib/copr/public_html/results/@copr/TEST1575431880356948981Project10/fedora-30-x86_64
+[2020-05-29 13:02:05,877][  INFO][PID:1869401] signed rpm: /var/lib/copr/public_html/results/@copr/TEST1575431880356948981Project10/fedora-30-x86_64/00855932-example/example-1.0.14-1.fc30.src.rpm
+[2020-05-29 13:02:06,297][  INFO][PID:1869401] signed rpm: /var/lib/copr/public_html/results/@copr/TEST1575431880356948981Project10/fedora-30-x86_64/00855932-example/example-1.0.14-1.fc30.x86_64.rpm
+[2020-05-29 13:02:06,298][  INFO][PID:1869401] Sign done
+[2020-05-29 13:02:06,299][  INFO][PID:1869401] Createrepo:: owner:  @copr; project: TEST1575431880356948981Project10; front url: https://copr-fe-dev.cloud.fedoraproject.org; path: /var/lib/copr/public_html/results/@copr/TEST1575431880356948981Project10/fedora-30-x86_64; base_url: https://download.copr-dev.fedorainfracloud.org/results/@copr/TEST1575431880356948981Project10/fedora-30-x86_64
+[2020-05-29 13:02:07,280][  INFO][PID:1869401] Retrieving pubkey 
+[2020-05-29 13:02:07,466][  INFO][PID:1869401] Added pubkey for user @copr project TEST1575431880356948981Project10 into: /var/lib/copr/public_html/results/@copr/TEST1575431880356948981Project10/pubkey.gpg

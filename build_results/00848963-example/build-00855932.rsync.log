@@ -1,0 +1,32 @@
+Warning: Permanently added '54.81.35.59' (ECDSA) to the list of known hosts.
+receiving incremental file list
+build.log.gz
+configs.tar.gz
+example-1.0.14-1.fc30.src.rpm
+example-1.0.14-1.fc30.x86_64.rpm
+example.spec
+hw_info.log.gz
+root.log.gz
+state.log.gz
+success
+chroot_scan/
+chroot_scan/var/
+chroot_scan/var/lib/
+chroot_scan/var/lib/mock/
+chroot_scan/var/lib/mock/fedora-30-x86_64-1590757230.043954/
+chroot_scan/var/lib/mock/fedora-30-x86_64-1590757230.043954/root/
+chroot_scan/var/lib/mock/fedora-30-x86_64-1590757230.043954/root/var/
+chroot_scan/var/lib/mock/fedora-30-x86_64-1590757230.043954/root/var/log/
+chroot_scan/var/lib/mock/fedora-30-x86_64-1590757230.043954/root/var/log/dnf.librepo.log
+chroot_scan/var/lib/mock/fedora-30-x86_64-1590757230.043954/root/var/log/dnf.log
+chroot_scan/var/lib/mock/fedora-30-x86_64-1590757230.043954/root/var/log/dnf.rpm.log
+chroot_scan/var/lib/mock/fedora-30-x86_64-1590757303.608949/
+chroot_scan/var/lib/mock/fedora-30-x86_64-1590757303.608949/root/
+chroot_scan/var/lib/mock/fedora-30-x86_64-1590757303.608949/root/var/
+chroot_scan/var/lib/mock/fedora-30-x86_64-1590757303.608949/root/var/log/
+chroot_scan/var/lib/mock/fedora-30-x86_64-1590757303.608949/root/var/log/dnf.librepo.log
+chroot_scan/var/lib/mock/fedora-30-x86_64-1590757303.608949/root/var/log/dnf.log
+chroot_scan/var/lib/mock/fedora-30-x86_64-1590757303.608949/root/var/log/dnf.rpm.log
+
+sent 365 bytes  received 147,578 bytes  98,628.67 bytes/sec
+total size is 146,081  speedup is 0.99

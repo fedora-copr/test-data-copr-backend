@@ -1,0 +1,22 @@
+2020-05-29T13:01:48Z INFO Librepo version: 1.11.3 with CURL_GLOBAL_ACK_EINTR support (libcurl/7.66.0 OpenSSL/1.1.1d-fips zlib/1.2.11 brotli/1.0.7 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.2.0) libssh/0.9.4/openssl/zlib nghttp2/1.40.0)
+2020-05-29T13:01:48Z INFO Librepo version: 1.11.3 with CURL_GLOBAL_ACK_EINTR support (libcurl/7.66.0 OpenSSL/1.1.1d-fips zlib/1.2.11 brotli/1.0.7 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.2.0) libssh/0.9.4/openssl/zlib nghttp2/1.40.0)
+2020-05-29T13:01:48Z INFO Downloading: https://download.copr-dev.fedorainfracloud.org/results/@copr/TEST1575431880356948981Project10/fedora-30-x86_64/repodata/repomd.xml
+2020-05-29T13:01:49Z INFO Downloading: https://mirrors.fedoraproject.org/metalink?repo=fedora-30&arch=x86_64
+2020-05-29T13:01:50Z INFO Downloading: https://mirrors.fedoraproject.org/metalink?repo=updates-released-f30&arch=x86_64
+2020-05-29T13:01:55Z INFO Librepo version: 1.11.3 with CURL_GLOBAL_ACK_EINTR support (libcurl/7.66.0 OpenSSL/1.1.1d-fips zlib/1.2.11 brotli/1.0.7 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.2.0) libssh/0.9.4/openssl/zlib nghttp2/1.40.0)
+2020-05-29T13:01:55Z INFO Librepo version: 1.11.3 with CURL_GLOBAL_ACK_EINTR support (libcurl/7.66.0 OpenSSL/1.1.1d-fips zlib/1.2.11 brotli/1.0.7 libidn2/2.3.0 libpsl/0.21.0 (+libidn2/2.2.0) libssh/0.9.4/openssl/zlib nghttp2/1.40.0)
+2020-05-29T13:01:55Z INFO Downloading: https://download.copr-dev.fedorainfracloud.org/results/@copr/TEST1575431880356948981Project10/fedora-30-x86_64/repodata/repomd.xml
+2020-05-29T13:01:55Z INFO Downloading: https://mirrors.fedoraproject.org/metalink?repo=fedora-30&arch=x86_64
+2020-05-29T13:01:56Z INFO Downloading: https://mirrors.fedoraproject.org/metalink?repo=updates-released-f30&arch=x86_64
+2020-05-29T13:01:57Z INFO Downloading: https://mirrors.fedoraproject.org/metalink?repo=fedora-30&arch=x86_64
+2020-05-29T13:01:57Z INFO Downloading: https://mirrors.fedoraproject.org/metalink?repo=updates-released-f30&arch=x86_64
+2020-05-29T13:01:57Z INFO Downloading: https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/releases/30/Everything/x86_64/os/Packages/i/isl-0.16.1-8.fc30.x86_64.rpm
+2020-05-29T13:01:57Z INFO Downloading: https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/releases/30/Everything/x86_64/os/Packages/l/libmpc-1.1.0-3.fc30.x86_64.rpm
+2020-05-29T13:01:57Z INFO Downloading: https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/30/Everything/x86_64/Packages/a/annobin-8.71-4.fc30.x86_64.rpm
+2020-05-29T13:01:57Z INFO Downloading: https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/30/Everything/x86_64/Packages/c/cpp-9.3.1-2.fc30.x86_64.rpm
+2020-05-29T13:01:57Z INFO Downloading: https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/30/Everything/x86_64/Packages/g/gcc-9.3.1-2.fc30.x86_64.rpm
+2020-05-29T13:01:57Z INFO Downloading: https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/30/Everything/x86_64/Packages/g/glibc-devel-2.29-29.fc30.x86_64.rpm
+2020-05-29T13:01:57Z INFO Downloading: https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/30/Everything/x86_64/Packages/g/glibc-headers-2.29-29.fc30.x86_64.rpm
+2020-05-29T13:01:57Z INFO Downloading: https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/30/Everything/x86_64/Packages/k/kernel-headers-5.6.11-100.fc30.x86_64.rpm
+2020-05-29T13:01:57Z INFO Downloading: https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/30/Everything/x86_64/Packages/l/libgomp-9.3.1-2.fc30.x86_64.rpm
+2020-05-29T13:01:57Z INFO Downloading: https://d2lzkl7pfhq30w.cloudfront.net/pub/fedora/linux/updates/30/Everything/x86_64/Packages/l/libxcrypt-devel-4.4.16-3.fc30.x86_64.rpm

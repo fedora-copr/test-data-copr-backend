@@ -1,0 +1,525 @@
+2020-05-29T13:00:31Z INFO --- logging initialized ---
+2020-05-29T13:00:31Z DDEBUG timer: config: 1 ms
+2020-05-29T13:00:31Z WARNING No matches found for the following disable plugin patterns: local, spacewalk
+2020-05-29T13:00:31Z DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2020-05-29T13:00:31Z DEBUG DNF version: 4.2.21
+2020-05-29T13:00:31Z DDEBUG Command: dnf --installroot /var/lib/mock/fedora-30-x86_64-1590757230.043954/root/ --releasever 30 --setopt=deltarpm=False --allowerasing --disableplugin=local --disableplugin=spacewalk install @buildsys-build --setopt=tsflags=nocontexts 
+2020-05-29T13:00:31Z DDEBUG Installroot: /var/lib/mock/fedora-30-x86_64-1590757230.043954/root/
+2020-05-29T13:00:31Z DDEBUG Releasever: 30
+2020-05-29T13:00:31Z DEBUG cachedir: /var/lib/mock/fedora-30-x86_64-1590757230.043954/root/var/cache/dnf
+2020-05-29T13:00:31Z DDEBUG Base command: install
+2020-05-29T13:00:31Z DDEBUG Extra commands: ['--installroot', '/var/lib/mock/fedora-30-x86_64-1590757230.043954/root/', '--releasever', '30', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', 'install', '@buildsys-build', '--setopt=tsflags=nocontexts']
+2020-05-29T13:00:31Z DEBUG Unknown configuration value: failovermethod=priority in /var/lib/mock/fedora-30-x86_64-1590757230.043954/root/etc/dnf/dnf.conf; Configuration: OptionBinding with id "failovermethod" does not exist
+2020-05-29T13:00:31Z DEBUG Unknown configuration value: failovermethod=priority in /var/lib/mock/fedora-30-x86_64-1590757230.043954/root/etc/dnf/dnf.conf; Configuration: OptionBinding with id "failovermethod" does not exist
+2020-05-29T13:00:31Z DEBUG Unknown configuration value: failovermethod=priority in /var/lib/mock/fedora-30-x86_64-1590757230.043954/root/etc/dnf/dnf.conf; Configuration: OptionBinding with id "failovermethod" does not exist
+2020-05-29T13:00:31Z DEBUG Unknown configuration option: best = 1 in /var/lib/mock/fedora-30-x86_64-1590757230.043954/root/etc/dnf/dnf.conf
+2020-05-29T13:00:31Z DEBUG User-Agent: constructed: 'libdnf (Fedora 31; cloud; Linux.x86_64)'
+2020-05-29T13:00:31Z DEBUG repo: downloading from remote: copr_base
+2020-05-29T13:00:32Z DEBUG copr_base: using metadata from Fri May 29 12:59:21 2020.
+2020-05-29T13:00:32Z DEBUG repo: downloading from remote: fedora
+2020-05-29T13:00:56Z DEBUG fedora: using metadata from Thu Apr 25 23:49:41 2019.
+2020-05-29T13:00:56Z DEBUG repo: downloading from remote: updates
+2020-05-29T13:01:05Z DEBUG updates: using metadata from Tue May 26 03:10:59 2020.
+2020-05-29T13:01:05Z DDEBUG timer: sack setup: 33326 ms
+2020-05-29T13:01:05Z DEBUG Completion plugin: Generating completion cache...
+2020-05-29T13:01:08Z DDEBUG Getting group metadata
+2020-05-29T13:01:08Z DDEBUG Adding group file from repository: fedora
+2020-05-29T13:01:08Z DDEBUG Adding group file from repository: updates
+2020-05-29T13:01:08Z DDEBUG timer: loading comps: 188 ms
+2020-05-29T13:01:08Z DEBUG Adding packages from group 'buildsys-build': {<libcomps.Package object 'gawk' at 0x7f8bc3f8d930>, <libcomps.Package object 'shadow-utils' at 0x7f8bc3f8d910>, <libcomps.Package object 'diffutils' at 0x7f8bc3f8d850>, <libcomps.Package object 'gzip' at 0x7f8bc3f8da50>, <libcomps.Package object 'util-linux' at 0x7f8bc3f8db10>, <libcomps.Package object 'make' at 0x7f8bc3f8dad0>, <libcomps.Package object 'bash' at 0x7f8bc3f8da30>, <libcomps.Package object 'redhat-rpm-config' at 0x7f8bc3f8d730>, <libcomps.Package object 'glibc-minimal-langpack' at 0x7f8bc3f8d610>, <libcomps.Package object 'findutils' at 0x7f8bc3f8d8d0>, <libcomps.Package object 'fedora-release' at 0x7f8bc3f8d9d0>, <libcomps.Package object 'sed' at 0x7f8bc3f8d9b0>, <libcomps.Package object 'rpm-build' at 0x7f8bc3f8d8b0>, <libcomps.Package object 'grep' at 0x7f8bc3f8d750>, <libcomps.Package object 'fedora-release-common' at 0x7f8bc3f8db70>, <libcomps.Package object 'which' at 0x7f8bc3f8db30>, <libcomps.Package object 'patch' at 0x7f8bc3f8daf0>, <libcomps.Package object 'tar' at 0x7f8bc3f8d950>, <libcomps.Package object 'info' at 0x7f8bc3f8dab0>, <libcomps.Package object 'unzip' at 0x7f8bc3f8d870>, <libcomps.Package object 'cpio' at 0x7f8bc3f8d8f0>, <libcomps.Package object 'coreutils' at 0x7f8bc3f8d5b0>, <libcomps.Package object 'xz' at 0x7f8bc3f8db50>, <libcomps.Package object 'bzip2' at 0x7f8bc3f8d770>}
+2020-05-29T13:01:08Z DEBUG --> Starting dependency resolution
+2020-05-29T13:01:08Z DEBUG ---> Package alternatives.x86_64 1.11-4.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package basesystem.noarch 11-7.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package brotli.x86_64 1.0.7-3.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package bzip2.x86_64 1.0.6-29.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package bzip2-libs.x86_64 1.0.6-29.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package cpio.x86_64 2.12-10.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package cracklib.x86_64 2.9.6-19.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package ctags.x86_64 5.8-25.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package cyrus-sasl-lib.x86_64 2.1.27-0.6rc7.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package diffutils.x86_64 3.7-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package dwz.x86_64 0.12-10.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package efi-srpm-macros.noarch 4-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package filesystem.x86_64 3.10-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package findutils.x86_64 1:4.6.0-22.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package fpc-srpm-macros.noarch 1.2-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package gawk.x86_64 4.2.1-6.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package gc.x86_64 7.6.4-5.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package gdbm-libs.x86_64 1:1.18-4.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package ghc-srpm-macros.noarch 1.4.2-9.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package gmp.x86_64 1:6.1.2-10.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package gnat-srpm-macros.noarch 4-9.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package go-srpm-macros.noarch 2-19.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package grep.x86_64 3.1-9.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package guile22.x86_64 2.2.4-3.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package gzip.x86_64 1.9-9.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package info.x86_64 6.6-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package keyutils-libs.x86_64 1.6-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libacl.x86_64 2.2.53-3.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libatomic_ops.x86_64 7.6.6-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libattr.x86_64 2.4.48-5.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libbabeltrace.x86_64 1.5.6-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libcap.x86_64 2.26-5.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libcap-ng.x86_64 0.7.9-7.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libdb.x86_64 5.3.28-37.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libdb-utils.x86_64 5.3.28-37.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libffi.x86_64 3.1-19.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libgpg-error.x86_64 1.33-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libipt.x86_64 2.0-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libmetalink.x86_64 0.1.3-8.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libnsl2.x86_64 1.2.0-4.20180605git4a062cf.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libpkgconf.x86_64 1.6.1-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libpsl.x86_64 0.20.2-6.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libpwquality.x86_64 1.4.0-12.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libsemanage.x86_64 2.9-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libsepol.x86_64 2.9-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libsigsegv.x86_64 2.11-7.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libtasn1.x86_64 4.13-7.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libtool-ltdl.x86_64 2.4.6-29.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libunistring.x86_64 0.9.10-5.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libutempter.x86_64 1.1.6-16.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libverto.x86_64 0.3.0-7.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package lua-libs.x86_64 5.3.5-5.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package mpfr.x86_64 3.1.6-4.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package ncurses.x86_64 6.1-10.20180923.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package ncurses-base.noarch 6.1-10.20180923.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package ncurses-libs.x86_64 6.1-10.20180923.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package ocaml-srpm-macros.noarch 5-5.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package openblas-srpm-macros.noarch 2-5.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package openldap.x86_64 2.4.47-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package pam.x86_64 1.3.1-17.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package perl-srpm-macros.noarch 1-29.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package pkgconf.x86_64 1.6.1-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package pkgconf-m4.noarch 1.6.1-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package pkgconf-pkg-config.x86_64 1.6.1-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package popt.x86_64 1.16-17.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package publicsuffix-list-dafsa.noarch 20190128-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package readline.x86_64 8.0-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package sed.x86_64 4.5-3.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package tar.x86_64 2:1.32-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package unzip.x86_64 6.0-43.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package which.x86_64 2.21-14.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package xz.x86_64 5.2.4-5.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package xz-libs.x86_64 5.2.4-5.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package zip.x86_64 3.0-24.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package audit-libs.x86_64 3.0-0.15.20191104git1c2f876.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package bash.x86_64 5.0.11-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package binutils.x86_64 2.31.1-37.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package boost-regex.x86_64 1.69.0-9.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package ca-certificates.noarch 2020.2.40-1.1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package coreutils.x86_64 8.31-6.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package coreutils-common.x86_64 8.31-6.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package crypto-policies.noarch 20190527-1.git0b3add8.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package curl.x86_64 7.65.3-4.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package elfutils.x86_64 0.179-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package elfutils-default-yama-scope.noarch 0.179-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package elfutils-libelf.x86_64 0.179-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package elfutils-libs.x86_64 0.179-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package expat.x86_64 2.2.8-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package fedora-gpg-keys.noarch 30-4 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package fedora-release.noarch 30-6 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package fedora-release-common.noarch 30-6 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package fedora-repos.noarch 30-4 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package file.x86_64 5.36-5.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package file-libs.x86_64 5.36-5.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package gdb-headless.x86_64 8.3-7.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package glib2.x86_64 2.60.7-3.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package glibc.x86_64 2.29-29.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package glibc-common.x86_64 2.29-29.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package glibc-minimal-langpack.x86_64 2.29-29.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package krb5-libs.x86_64 1.17-15.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libarchive.x86_64 3.3.3-7.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libblkid.x86_64 2.33.2-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libcom_err.x86_64 1.44.6-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libcurl.x86_64 7.65.3-4.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libfdisk.x86_64 2.33.2-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libgcc.x86_64 9.3.1-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libgcrypt.x86_64 1.8.5-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libicu.x86_64 63.2-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libidn2.x86_64 2.3.0-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libmount.x86_64 2.33.2-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libnghttp2.x86_64 1.40.0-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libselinux.x86_64 2.9-3.1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libsmartcols.x86_64 2.33.2-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libssh.x86_64 0.9.3-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libssh-config.noarch 0.9.3-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libstdc++.x86_64 9.3.1-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libtirpc.x86_64 1.2.6-0.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libuuid.x86_64 2.33.2-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libxcrypt.x86_64 4.4.16-3.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libxml2.x86_64 2.9.10-3.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package libzstd.x86_64 1.4.4-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package lz4-libs.x86_64 1.9.1-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package make.x86_64 1:4.2.1-14.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package nim-srpm-macros.noarch 2-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package openssl-libs.x86_64 1:1.1.1g-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package p11-kit.x86_64 0.23.20-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package p11-kit-trust.x86_64 0.23.20-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package patch.x86_64 2.7.6-11.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package pcre.x86_64 8.44-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package pcre2.x86_64 10.34-9.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package pcre2-syntax.noarch 10.34-9.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package python-pip-wheel.noarch 19.0.3-7.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package python-setuptools-wheel.noarch 40.8.0-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package python-srpm-macros.noarch 3-47.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package python3-libs.x86_64 3.7.7-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package qt5-srpm-macros.noarch 5.12.5-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package redhat-rpm-config.noarch 132-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package rpm.x86_64 4.14.2.1-5.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package rpm-build.x86_64 4.14.2.1-5.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package rpm-build-libs.x86_64 4.14.2.1-5.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package rpm-libs.x86_64 4.14.2.1-5.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package rust-srpm-macros.noarch 10-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package setup.noarch 2.13.6-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package shadow-utils.x86_64 2:4.6-9.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package source-highlight.x86_64 3.1.9-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package sqlite-libs.x86_64 3.26.0-7.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package systemd-libs.x86_64 241-14.git18dd3fb.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package tzdata.noarch 2020a-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package util-linux.x86_64 2.33.2-2.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package zlib.x86_64 1.2.11-19.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG ---> Package zstd.x86_64 1.4.4-1.fc30 will be installed
+2020-05-29T13:01:08Z DEBUG --> Finished dependency resolution
+2020-05-29T13:01:08Z DDEBUG timer: depsolve: 23 ms
+2020-05-29T13:01:08Z INFO Dependencies resolved.
+2020-05-29T13:01:08Z INFO ======================================================================================
+ Package                       Arch    Version                          Repo      Size
+======================================================================================
+Installing group/module packages:
+ [1mbash                         [m x86_64  5.0.11-1.fc30                    updates  1.6 M
+ [1mbzip2                        [m x86_64  1.0.6-29.fc30                    fedora    49 k
+ [1mcoreutils                    [m x86_64  8.31-6.fc30                      updates  1.4 M
+ [1mcpio                         [m x86_64  2.12-10.fc30                     fedora   247 k
+ [1mdiffutils                    [m x86_64  3.7-2.fc30                       fedora   384 k
+ [1mfedora-release               [m noarch  30-6                             updates   11 k
+ [1mfedora-release-common        [m noarch  30-6                             updates   19 k
+ [1mfindutils                    [m x86_64  1:4.6.0-22.fc30                  fedora   504 k
+ [1mgawk                         [m x86_64  4.2.1-6.fc30                     fedora   1.1 M
+ [1mglibc-minimal-langpack       [m x86_64  2.29-29.fc30                     updates   29 k
+ [1mgrep                         [m x86_64  3.1-9.fc30                       fedora   248 k
+ [1mgzip                         [m x86_64  1.9-9.fc30                       fedora   151 k
+ [1minfo                         [m x86_64  6.6-1.fc30                       fedora   212 k
+ [1mmake                         [m x86_64  1:4.2.1-14.fc30                  updates  486 k
+ [1mpatch                        [m x86_64  2.7.6-11.fc30                    updates  126 k
+ [1mredhat-rpm-config            [m noarch  132-1.fc30                       updates   63 k
+ [1mrpm-build                    [m x86_64  4.14.2.1-5.fc30                  updates  106 k
+ [1msed                          [m x86_64  4.5-3.fc30                       fedora   285 k
+ [1mshadow-utils                 [m x86_64  2:4.6-9.fc30                     updates  1.2 M
+ [1mtar                          [m x86_64  2:1.32-1.fc30                    fedora   863 k
+ [1munzip                        [m x86_64  6.0-43.fc30                      fedora   175 k
+ [1mutil-linux                   [m x86_64  2.33.2-2.fc30                    updates  2.4 M
+ [1mwhich                        [m x86_64  2.21-14.fc30                     fedora    41 k
+ [1mxz                           [m x86_64  5.2.4-5.fc30                     fedora   143 k
+Installing dependencies:
+ [1malternatives                 [m x86_64  1.11-4.fc30                      fedora    33 k
+ [1maudit-libs                   [m x86_64  3.0-0.15.20191104git1c2f876.fc30 updates  110 k
+ [1mbasesystem                   [m noarch  11-7.fc30                        fedora   6.9 k
+ [1mbinutils                     [m x86_64  2.31.1-37.fc30                   updates  5.9 M
+ [1mboost-regex                  [m x86_64  1.69.0-9.fc30                    updates  302 k
+ [1mbrotli                       [m x86_64  1.0.7-3.fc30                     fedora   311 k
+ [1mbzip2-libs                   [m x86_64  1.0.6-29.fc30                    fedora    37 k
+ [1mca-certificates              [m noarch  2020.2.40-1.1.fc30               updates  384 k
+ [1mcoreutils-common             [m x86_64  8.31-6.fc30                      updates  2.0 M
+ [1mcracklib                     [m x86_64  2.9.6-19.fc30                    fedora    77 k
+ [1mcrypto-policies              [m noarch  20190527-1.git0b3add8.fc30       updates   51 k
+ [1mctags                        [m x86_64  5.8-25.fc30                      fedora   158 k
+ [1mcurl                         [m x86_64  7.65.3-4.fc30                    updates  300 k
+ [1mcyrus-sasl-lib               [m x86_64  2.1.27-0.6rc7.fc30               fedora    92 k
+ [1mdwz                          [m x86_64  0.12-10.fc30                     fedora   102 k
+ [1mefi-srpm-macros              [m noarch  4-2.fc30                         fedora    23 k
+ [1melfutils                     [m x86_64  0.179-2.fc30                     updates  519 k
+ [1melfutils-default-yama-scope  [m noarch  0.179-2.fc30                     updates   18 k
+ [1melfutils-libelf              [m x86_64  0.179-2.fc30                     updates  183 k
+ [1melfutils-libs                [m x86_64  0.179-2.fc30                     updates  261 k
+ [1mexpat                        [m x86_64  2.2.8-1.fc30                     updates   98 k
+ [1mfedora-gpg-keys              [m noarch  30-4                             updates  104 k
+ [1mfedora-repos                 [m noarch  30-4                             updates  9.5 k
+ [1mfile                         [m x86_64  5.36-5.fc30                      updates   49 k
+ [1mfile-libs                    [m x86_64  5.36-5.fc30                      updates  547 k
+ [1mfilesystem                   [m x86_64  3.10-1.fc30                      fedora   1.1 M
+ [1mfpc-srpm-macros              [m noarch  1.2-1.fc30                       fedora   7.5 k
+ [1mgc                           [m x86_64  7.6.4-5.fc30                     fedora    93 k
+ [1mgdb-headless                 [m x86_64  8.3-7.fc30                       updates  3.6 M
+ [1mgdbm-libs                    [m x86_64  1:1.18-4.fc30                    fedora    50 k
+ [1mghc-srpm-macros              [m noarch  1.4.2-9.fc30                     fedora   7.6 k
+ [1mglib2                        [m x86_64  2.60.7-3.fc30                    updates  2.6 M
+ [1mglibc                        [m x86_64  2.29-29.fc30                     updates  3.9 M
+ [1mglibc-common                 [m x86_64  2.29-29.fc30                     updates  805 k
+ [1mgmp                          [m x86_64  1:6.1.2-10.fc30                  fedora   265 k
+ [1mgnat-srpm-macros             [m noarch  4-9.fc30                         fedora   8.5 k
+ [1mgo-srpm-macros               [m noarch  2-19.fc30                        fedora    11 k
+ [1mguile22                      [m x86_64  2.2.4-3.fc30                     fedora   6.4 M
+ [1mkeyutils-libs                [m x86_64  1.6-2.fc30                       fedora    30 k
+ [1mkrb5-libs                    [m x86_64  1.17-15.fc30                     updates  740 k
+ [1mlibacl                       [m x86_64  2.2.53-3.fc30                    fedora    24 k
+ [1mlibarchive                   [m x86_64  3.3.3-7.fc30                     updates  352 k
+ [1mlibatomic_ops                [m x86_64  7.6.6-2.fc30                     fedora    34 k
+ [1mlibattr                      [m x86_64  2.4.48-5.fc30                    fedora    17 k
+ [1mlibbabeltrace                [m x86_64  1.5.6-2.fc30                     fedora   184 k
+ [1mlibblkid                     [m x86_64  2.33.2-2.fc30                    updates  144 k
+ [1mlibcap                       [m x86_64  2.26-5.fc30                      fedora    46 k
+ [1mlibcap-ng                    [m x86_64  0.7.9-7.fc30                     fedora    27 k
+ [1mlibcom_err                   [m x86_64  1.44.6-2.fc30                    updates   27 k
+ [1mlibcurl                      [m x86_64  7.65.3-4.fc30                    updates  262 k
+ [1mlibdb                        [m x86_64  5.3.28-37.fc30                   fedora   735 k
+ [1mlibdb-utils                  [m x86_64  5.3.28-37.fc30                   fedora   129 k
+ [1mlibfdisk                     [m x86_64  2.33.2-2.fc30                    updates  193 k
+ [1mlibffi                       [m x86_64  3.1-19.fc30                      fedora    31 k
+ [1mlibgcc                       [m x86_64  9.3.1-2.fc30                     updates  101 k
+ [1mlibgcrypt                    [m x86_64  1.8.5-1.fc30                     updates  450 k
+ [1mlibgpg-error                 [m x86_64  1.33-2.fc30                      fedora   238 k
+ [1mlibicu                       [m x86_64  63.2-2.fc30                      updates  9.0 M
+ [1mlibidn2                      [m x86_64  2.3.0-1.fc30                     updates   93 k
+ [1mlibipt                       [m x86_64  2.0-2.fc30                       fedora    51 k
+ [1mlibmetalink                  [m x86_64  0.1.3-8.fc30                     fedora    28 k
+ [1mlibmount                     [m x86_64  2.33.2-2.fc30                    updates  167 k
+ [1mlibnghttp2                   [m x86_64  1.40.0-1.fc30                    updates   72 k
+ [1mlibnsl2                      [m x86_64  1.2.0-4.20180605git4a062cf.fc30  fedora    54 k
+ [1mlibpkgconf                   [m x86_64  1.6.1-1.fc30                     fedora    34 k
+ [1mlibpsl                       [m x86_64  0.20.2-6.fc30                    fedora    57 k
+ [1mlibpwquality                 [m x86_64  1.4.0-12.fc30                    fedora    96 k
+ [1mlibselinux                   [m x86_64  2.9-3.1.fc30                     updates   78 k
+ [1mlibsemanage                  [m x86_64  2.9-1.fc30                       fedora   112 k
+ [1mlibsepol                     [m x86_64  2.9-1.fc30                       fedora   280 k
+ [1mlibsigsegv                   [m x86_64  2.11-7.fc30                      fedora    25 k
+ [1mlibsmartcols                 [m x86_64  2.33.2-2.fc30                    updates  107 k
+ [1mlibssh                       [m x86_64  0.9.3-1.fc30                     updates  207 k
+ [1mlibssh-config                [m noarch  0.9.3-1.fc30                     updates   11 k
+ [1mlibstdc++                    [m x86_64  9.3.1-2.fc30                     updates  605 k
+ [1mlibtasn1                     [m x86_64  4.13-7.fc30                      fedora    67 k
+ [1mlibtirpc                     [m x86_64  1.2.6-0.fc30                     updates   93 k
+ [1mlibtool-ltdl                 [m x86_64  2.4.6-29.fc30                    fedora    34 k
+ [1mlibunistring                 [m x86_64  0.9.10-5.fc30                    fedora   415 k
+ [1mlibutempter                  [m x86_64  1.1.6-16.fc30                    fedora    24 k
+ [1mlibuuid                      [m x86_64  2.33.2-2.fc30                    updates   26 k
+ [1mlibverto                     [m x86_64  0.3.0-7.fc30                     fedora    20 k
+ [1mlibxcrypt                    [m x86_64  4.4.16-3.fc30                    updates  123 k
+ [1mlibxml2                      [m x86_64  2.9.10-3.fc30                    updates  686 k
+ [1mlibzstd                      [m x86_64  1.4.4-1.fc30                     updates  266 k
+ [1mlua-libs                     [m x86_64  5.3.5-5.fc30                     fedora   104 k
+ [1mlz4-libs                     [m x86_64  1.9.1-1.fc30                     updates   62 k
+ [1mmpfr                         [m x86_64  3.1.6-4.fc30                     fedora   212 k
+ [1mncurses                      [m x86_64  6.1-10.20180923.fc30             fedora   360 k
+ [1mncurses-base                 [m noarch  6.1-10.20180923.fc30             fedora    59 k
+ [1mncurses-libs                 [m x86_64  6.1-10.20180923.fc30             fedora   288 k
+ [1mnim-srpm-macros              [m noarch  2-1.fc30                         updates  8.2 k
+ [1mocaml-srpm-macros            [m noarch  5-5.fc30                         fedora   7.7 k
+ [1mopenblas-srpm-macros         [m noarch  2-5.fc30                         fedora   7.3 k
+ [1mopenldap                     [m x86_64  2.4.47-1.fc30                    fedora   280 k
+ [1mopenssl-libs                 [m x86_64  1:1.1.1g-1.fc30                  updates  1.4 M
+ [1mp11-kit                      [m x86_64  0.23.20-1.fc30                   updates  316 k
+ [1mp11-kit-trust                [m x86_64  0.23.20-1.fc30                   updates  130 k
+ [1mpam                          [m x86_64  1.3.1-17.fc30                    fedora   624 k
+ [1mpcre                         [m x86_64  8.44-1.fc30                      updates  189 k
+ [1mpcre2                        [m x86_64  10.34-9.fc30                     updates  219 k
+ [1mpcre2-syntax                 [m noarch  10.34-9.fc30                     updates  141 k
+ [1mperl-srpm-macros             [m noarch  1-29.fc30                        fedora   8.2 k
+ [1mpkgconf                      [m x86_64  1.6.1-1.fc30                     fedora    38 k
+ [1mpkgconf-m4                   [m noarch  1.6.1-1.fc30                     fedora    15 k
+ [1mpkgconf-pkg-config           [m x86_64  1.6.1-1.fc30                     fedora    11 k
+ [1mpopt                         [m x86_64  1.16-17.fc30                     fedora    55 k
+ [1mpublicsuffix-list-dafsa      [m noarch  20190128-2.fc30                  fedora    54 k
+ [1mpython-pip-wheel             [m noarch  19.0.3-7.fc30                    updates  1.2 M
+ [1mpython-setuptools-wheel      [m noarch  40.8.0-2.fc30                    updates  276 k
+ [1mpython-srpm-macros           [m noarch  3-47.fc30                        updates   16 k
+ [1mpython3-libs                 [m x86_64  3.7.7-1.fc30                     updates  7.9 M
+ [1mqt5-srpm-macros              [m noarch  5.12.5-1.fc30                    updates  8.9 k
+ [1mreadline                     [m x86_64  8.0-2.fc30                       fedora   191 k
+ [1mrpm                          [m x86_64  4.14.2.1-5.fc30                  updates  479 k
+ [1mrpm-build-libs               [m x86_64  4.14.2.1-5.fc30                  updates   86 k
+ [1mrpm-libs                     [m x86_64  4.14.2.1-5.fc30                  updates  264 k
+ [1mrust-srpm-macros             [m noarch  10-1.fc30                        updates  9.5 k
+ [1msetup                        [m noarch  2.13.6-1.fc30                    updates  149 k
+ [1msource-highlight             [m x86_64  3.1.9-1.fc30                     updates  673 k
+ [1msqlite-libs                  [m x86_64  3.26.0-7.fc30                    updates  557 k
+ [1msystemd-libs                 [m x86_64  241-14.git18dd3fb.fc30           updates  503 k
+ [1mtzdata                       [m noarch  2020a-1.fc30                     updates  427 k
+ [1mxz-libs                      [m x86_64  5.2.4-5.fc30                     fedora    85 k
+ [1mzip                          [m x86_64  3.0-24.fc30                      fedora   264 k
+ [1mzlib                         [m x86_64  1.2.11-19.fc30                   updates   91 k
+ [1mzstd                         [m x86_64  1.4.4-1.fc30                     updates  396 k
+Installing Groups:
+ Buildsystem building group                                                           
+
+Transaction Summary
+======================================================================================
+Install  151 Packages
+
+2020-05-29T13:01:08Z INFO Total download size: 76 M
+2020-05-29T13:01:08Z INFO Installed size: 339 M
+2020-05-29T13:01:08Z INFO Downloading Packages:
+2020-05-29T13:01:10Z INFO --------------------------------------------------------------------------------
+2020-05-29T13:01:10Z INFO Total                                            46 MB/s |  76 MB     00:01     
+2020-05-29T13:01:10Z CRITICAL Importing GPG key 0xCFC659B9:
+ Userid     : "Fedora (30) <fedora-30-primary@fedoraproject.org>"
+ Fingerprint: F1D8 EC98 F241 AAF2 0DF6 9420 EF3C 111F CFC6 59B9
+ From       : /usr/share/distribution-gpg-keys/fedora/RPM-GPG-KEY-fedora-30-primary
+2020-05-29T13:01:10Z INFO Key imported successfully
+2020-05-29T13:01:10Z INFO Running transaction check
+2020-05-29T13:01:11Z INFO Transaction check succeeded.
+2020-05-29T13:01:11Z INFO Running transaction test
+2020-05-29T13:01:11Z INFO Transaction test succeeded.
+2020-05-29T13:01:11Z DDEBUG timer: transaction test: 892 ms
+2020-05-29T13:01:11Z INFO Running transaction
+2020-05-29T13:01:11Z DEBUG RPMDB altered outside of DNF.
+2020-05-29T13:01:11Z DDEBUG RPM transaction start.
+2020-05-29T13:01:27Z DDEBUG RPM transaction over.
+2020-05-29T13:01:27Z DDEBUG timer: verify transaction: 59 ms
+2020-05-29T13:01:27Z DDEBUG timer: transaction: 15936 ms
+2020-05-29T13:01:27Z DEBUG Completion plugin: Generating completion cache...
+2020-05-29T13:01:27Z INFO 
+Installed:
+  alternatives-1.11-4.fc30.x86_64                                               
+  audit-libs-3.0-0.15.20191104git1c2f876.fc30.x86_64                            
+  basesystem-11-7.fc30.noarch                                                   
+  bash-5.0.11-1.fc30.x86_64                                                     
+  binutils-2.31.1-37.fc30.x86_64                                                
+  boost-regex-1.69.0-9.fc30.x86_64                                              
+  brotli-1.0.7-3.fc30.x86_64                                                    
+  bzip2-1.0.6-29.fc30.x86_64                                                    
+  bzip2-libs-1.0.6-29.fc30.x86_64                                               
+  ca-certificates-2020.2.40-1.1.fc30.noarch                                     
+  coreutils-8.31-6.fc30.x86_64                                                  
+  coreutils-common-8.31-6.fc30.x86_64                                           
+  cpio-2.12-10.fc30.x86_64                                                      
+  cracklib-2.9.6-19.fc30.x86_64                                                 
+  crypto-policies-20190527-1.git0b3add8.fc30.noarch                             
+  ctags-5.8-25.fc30.x86_64                                                      
+  curl-7.65.3-4.fc30.x86_64                                                     
+  cyrus-sasl-lib-2.1.27-0.6rc7.fc30.x86_64                                      
+  diffutils-3.7-2.fc30.x86_64                                                   
+  dwz-0.12-10.fc30.x86_64                                                       
+  efi-srpm-macros-4-2.fc30.noarch                                               
+  elfutils-0.179-2.fc30.x86_64                                                  
+  elfutils-default-yama-scope-0.179-2.fc30.noarch                               
+  elfutils-libelf-0.179-2.fc30.x86_64                                           
+  elfutils-libs-0.179-2.fc30.x86_64                                             
+  expat-2.2.8-1.fc30.x86_64                                                     
+  fedora-gpg-keys-30-4.noarch                                                   
+  fedora-release-30-6.noarch                                                    
+  fedora-release-common-30-6.noarch                                             
+  fedora-repos-30-4.noarch                                                      
+  file-5.36-5.fc30.x86_64                                                       
+  file-libs-5.36-5.fc30.x86_64                                                  
+  filesystem-3.10-1.fc30.x86_64                                                 
+  findutils-1:4.6.0-22.fc30.x86_64                                              
+  fpc-srpm-macros-1.2-1.fc30.noarch                                             
+  gawk-4.2.1-6.fc30.x86_64                                                      
+  gc-7.6.4-5.fc30.x86_64                                                        
+  gdb-headless-8.3-7.fc30.x86_64                                                
+  gdbm-libs-1:1.18-4.fc30.x86_64                                                
+  ghc-srpm-macros-1.4.2-9.fc30.noarch                                           
+  glib2-2.60.7-3.fc30.x86_64                                                    
+  glibc-2.29-29.fc30.x86_64                                                     
+  glibc-common-2.29-29.fc30.x86_64                                              
+  glibc-minimal-langpack-2.29-29.fc30.x86_64                                    
+  gmp-1:6.1.2-10.fc30.x86_64                                                    
+  gnat-srpm-macros-4-9.fc30.noarch                                              
+  go-srpm-macros-2-19.fc30.noarch                                               
+  grep-3.1-9.fc30.x86_64                                                        
+  guile22-2.2.4-3.fc30.x86_64                                                   
+  gzip-1.9-9.fc30.x86_64                                                        
+  info-6.6-1.fc30.x86_64                                                        
+  keyutils-libs-1.6-2.fc30.x86_64                                               
+  krb5-libs-1.17-15.fc30.x86_64                                                 
+  libacl-2.2.53-3.fc30.x86_64                                                   
+  libarchive-3.3.3-7.fc30.x86_64                                                
+  libatomic_ops-7.6.6-2.fc30.x86_64                                             
+  libattr-2.4.48-5.fc30.x86_64                                                  
+  libbabeltrace-1.5.6-2.fc30.x86_64                                             
+  libblkid-2.33.2-2.fc30.x86_64                                                 
+  libcap-2.26-5.fc30.x86_64                                                     
+  libcap-ng-0.7.9-7.fc30.x86_64                                                 
+  libcom_err-1.44.6-2.fc30.x86_64                                               
+  libcurl-7.65.3-4.fc30.x86_64                                                  
+  libdb-5.3.28-37.fc30.x86_64                                                   
+  libdb-utils-5.3.28-37.fc30.x86_64                                             
+  libfdisk-2.33.2-2.fc30.x86_64                                                 
+  libffi-3.1-19.fc30.x86_64                                                     
+  libgcc-9.3.1-2.fc30.x86_64                                                    
+  libgcrypt-1.8.5-1.fc30.x86_64                                                 
+  libgpg-error-1.33-2.fc30.x86_64                                               
+  libicu-63.2-2.fc30.x86_64                                                     
+  libidn2-2.3.0-1.fc30.x86_64                                                   
+  libipt-2.0-2.fc30.x86_64                                                      
+  libmetalink-0.1.3-8.fc30.x86_64                                               
+  libmount-2.33.2-2.fc30.x86_64                                                 
+  libnghttp2-1.40.0-1.fc30.x86_64                                               
+  libnsl2-1.2.0-4.20180605git4a062cf.fc30.x86_64                                
+  libpkgconf-1.6.1-1.fc30.x86_64                                                
+  libpsl-0.20.2-6.fc30.x86_64                                                   
+  libpwquality-1.4.0-12.fc30.x86_64                                             
+  libselinux-2.9-3.1.fc30.x86_64                                                
+  libsemanage-2.9-1.fc30.x86_64                                                 
+  libsepol-2.9-1.fc30.x86_64                                                    
+  libsigsegv-2.11-7.fc30.x86_64                                                 
+  libsmartcols-2.33.2-2.fc30.x86_64                                             
+  libssh-0.9.3-1.fc30.x86_64                                                    
+  libssh-config-0.9.3-1.fc30.noarch                                             
+  libstdc++-9.3.1-2.fc30.x86_64                                                 
+  libtasn1-4.13-7.fc30.x86_64                                                   
+  libtirpc-1.2.6-0.fc30.x86_64                                                  
+  libtool-ltdl-2.4.6-29.fc30.x86_64                                             
+  libunistring-0.9.10-5.fc30.x86_64                                             
+  libutempter-1.1.6-16.fc30.x86_64                                              
+  libuuid-2.33.2-2.fc30.x86_64                                                  
+  libverto-0.3.0-7.fc30.x86_64                                                  
+  libxcrypt-4.4.16-3.fc30.x86_64                                                
+  libxml2-2.9.10-3.fc30.x86_64                                                  
+  libzstd-1.4.4-1.fc30.x86_64                                                   
+  lua-libs-5.3.5-5.fc30.x86_64                                                  
+  lz4-libs-1.9.1-1.fc30.x86_64                                                  
+  make-1:4.2.1-14.fc30.x86_64                                                   
+  mpfr-3.1.6-4.fc30.x86_64                                                      
+  ncurses-6.1-10.20180923.fc30.x86_64                                           
+  ncurses-base-6.1-10.20180923.fc30.noarch                                      
+  ncurses-libs-6.1-10.20180923.fc30.x86_64                                      
+  nim-srpm-macros-2-1.fc30.noarch                                               
+  ocaml-srpm-macros-5-5.fc30.noarch                                             
+  openblas-srpm-macros-2-5.fc30.noarch                                          
+  openldap-2.4.47-1.fc30.x86_64                                                 
+  openssl-libs-1:1.1.1g-1.fc30.x86_64                                           
+  p11-kit-0.23.20-1.fc30.x86_64                                                 
+  p11-kit-trust-0.23.20-1.fc30.x86_64                                           
+  pam-1.3.1-17.fc30.x86_64                                                      
+  patch-2.7.6-11.fc30.x86_64                                                    
+  pcre-8.44-1.fc30.x86_64                                                       
+  pcre2-10.34-9.fc30.x86_64                                                     
+  pcre2-syntax-10.34-9.fc30.noarch                                              
+  perl-srpm-macros-1-29.fc30.noarch                                             
+  pkgconf-1.6.1-1.fc30.x86_64                                                   
+  pkgconf-m4-1.6.1-1.fc30.noarch                                                
+  pkgconf-pkg-config-1.6.1-1.fc30.x86_64                                        
+  popt-1.16-17.fc30.x86_64                                                      
+  publicsuffix-list-dafsa-20190128-2.fc30.noarch                                
+  python-pip-wheel-19.0.3-7.fc30.noarch                                         
+  python-setuptools-wheel-40.8.0-2.fc30.noarch                                  
+  python-srpm-macros-3-47.fc30.noarch                                           
+  python3-libs-3.7.7-1.fc30.x86_64                                              
+  qt5-srpm-macros-5.12.5-1.fc30.noarch                                          
+  readline-8.0-2.fc30.x86_64                                                    
+  redhat-rpm-config-132-1.fc30.noarch                                           
+  rpm-4.14.2.1-5.fc30.x86_64                                                    
+  rpm-build-4.14.2.1-5.fc30.x86_64                                              
+  rpm-build-libs-4.14.2.1-5.fc30.x86_64                                         
+  rpm-libs-4.14.2.1-5.fc30.x86_64                                               
+  rust-srpm-macros-10-1.fc30.noarch                                             
+  sed-4.5-3.fc30.x86_64                                                         
+  setup-2.13.6-1.fc30.noarch                                                    
+  shadow-utils-2:4.6-9.fc30.x86_64                                              
+  source-highlight-3.1.9-1.fc30.x86_64                                          
+  sqlite-libs-3.26.0-7.fc30.x86_64                                              
+  systemd-libs-241-14.git18dd3fb.fc30.x86_64                                    
+  tar-2:1.32-1.fc30.x86_64                                                      
+  tzdata-2020a-1.fc30.noarch                                                    
+  unzip-6.0-43.fc30.x86_64                                                      
+  util-linux-2.33.2-2.fc30.x86_64                                               
+  which-2.21-14.fc30.x86_64                                                     
+  xz-5.2.4-5.fc30.x86_64                                                        
+  xz-libs-5.2.4-5.fc30.x86_64                                                   
+  zip-3.0-24.fc30.x86_64                                                        
+  zlib-1.2.11-19.fc30.x86_64                                                    
+  zstd-1.4.4-1.fc30.x86_64                                                      
+
+2020-05-29T13:01:27Z INFO Complete!
+2020-05-29T13:01:27Z DDEBUG Cleaning up.
