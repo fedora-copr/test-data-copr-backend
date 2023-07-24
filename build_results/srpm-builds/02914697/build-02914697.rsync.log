@@ -1,0 +1,10 @@
+Warning: Permanently added '2620:52:3:1:dead:beef:cafe:c140' (ED25519) to the list of known hosts.
+receiving incremental file list
+./
+hello-2.8-1.src.rpm
+hello.spec
+results.json
+success
+
+sent 107 bytes  received 706,385 bytes  1,412,984.00 bytes/sec
+total size is 705,909  speedup is 1.00
