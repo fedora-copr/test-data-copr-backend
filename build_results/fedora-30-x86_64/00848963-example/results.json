@@ -1,0 +1,18 @@
+{
+    "packages": [
+        {
+            "name": "example",
+            "epoch": null,
+            "version": "1.0.14",
+            "release": "1.fc30",
+            "arch": "src"
+        },
+        {
+            "name": "example",
+            "epoch": null,
+            "version": "1.0.14",
+            "release": "1.fc30",
+            "arch": "x86_64"
+        }
+    ]
+}
