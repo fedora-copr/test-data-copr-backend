@@ -1,0 +1,825 @@
+10-11 13:29 root         DEBUG    fedora-review 0.10.0 e79b66b 2023-07-24 17:28:48 -0500 started
+10-11 13:29 root         DEBUG    Command  line: /bin/fedora-review --no-colors --prebuilt --rpm-spec --name example --mock-config /var/lib/copr-rpmbuild/results/configs/child.cfg
+10-11 13:29 root         INFO     Processing local files: example
+10-11 13:29 root         DEBUG    Active settings after processing options
+10-11 13:29 root         DEBUG        bz_url: https://bugzilla.redhat.com
+10-11 13:29 root         DEBUG        _con_handler: <StreamHandler <stderr> (INFO)>
+10-11 13:29 root         DEBUG        _log_config_done: True
+10-11 13:29 root         DEBUG        cache: False
+10-11 13:29 root         DEBUG        resultdir: None
+10-11 13:29 root         DEBUG        init_done: True
+10-11 13:29 root         DEBUG        uniqueext: None
+10-11 13:29 root         DEBUG        configdir: None
+10-11 13:29 root         DEBUG        log_level: 20
+10-11 13:29 root         DEBUG        prebuilt: True
+10-11 13:29 root         DEBUG        verbose: False
+10-11 13:29 root         DEBUG        name: example
+10-11 13:29 root         DEBUG        use_colors: False
+10-11 13:29 root         DEBUG        session_log: /var/lib/copr-rpmbuild/results/cache/fedora-review.log
+10-11 13:29 root         DEBUG        bug: None
+10-11 13:29 root         DEBUG        url: None
+10-11 13:29 root         DEBUG        copr_build_descriptor: None
+10-11 13:29 root         DEBUG        list_checks: False
+10-11 13:29 root         DEBUG        list_flags: False
+10-11 13:29 root         DEBUG        list_plugins: False
+10-11 13:29 root         DEBUG        version: False
+10-11 13:29 root         DEBUG        flags: []
+10-11 13:29 root         DEBUG        repo: None
+10-11 13:29 root         DEBUG        mock_config: /var/lib/copr-rpmbuild/results/configs/child.cfg
+10-11 13:29 root         DEBUG        no_report: False
+10-11 13:29 root         DEBUG        nobuild: False
+10-11 13:29 root         DEBUG        mock_options: --no-cleanup-after --no-clean
+10-11 13:29 root         DEBUG        other_bz: None
+10-11 13:29 root         DEBUG        plugins_arg: None
+10-11 13:29 root         DEBUG        single: None
+10-11 13:29 root         DEBUG        rpm_spec: True
+10-11 13:29 root         DEBUG        exclude: None
+10-11 13:29 root         DEBUG        checksum: sha256
+10-11 13:29 root         DEBUG        plugins: {}
+10-11 13:29 root         INFO     Getting .spec and .srpm Urls from : Local files in /var/lib/copr-rpmbuild/results
+10-11 13:29 root         INFO       --> SRPM url: file:///var/lib/copr-rpmbuild/results/example-1.0.14-1.fc37.src.rpm
+10-11 13:29 root         INFO     Using review directory: /var/lib/copr-rpmbuild/results/example
+10-11 13:29 root         DEBUG    find_urls completed: 0.010
+10-11 13:30 root         DEBUG    Avoiding init of working mock root
+10-11 13:30 root         DEBUG    Url download completed: 84.533
+10-11 13:30 root         INFO     No upstream for (Source0): example-1.0.14.tar.gz
+10-11 13:30 root         INFO     Running checks and generating report
+10-11 13:30 root         DEBUG    Running check: CheckResultdir
+10-11 13:30 root         DEBUG        CheckResultdir completed: 0.000 seconds
+10-11 13:30 root         DEBUG    Running check: CheckBuild
+10-11 13:30 root         DEBUG    Running: rpm -ql --dump --nosignature -p /var/lib/copr-rpmbuild/results/example-1.0.14-1.fc37.x86_64.rpm
+10-11 13:30 root         DEBUG        CheckBuild completed: 0.007 seconds
+10-11 13:30 root         DEBUG    Running check: CheckRpmlint
+10-11 13:30 root         DEBUG    Run command: rpmlint --ignore-unused-rpmlintrc --rpmlintrc /tmp/tmpq4qyhgbg /var/lib/copr-rpmbuild/results/example-1.0.14-1.fc37.x86_64.rpm /var/lib/copr-rpmbuild/results/example-1.0.14-1.fc37.src.rpm
+10-11 13:30 root         DEBUG        CheckRpmlint completed: 0.413 seconds
+10-11 13:30 root         DEBUG    Running check: CheckPackageInstalls
+10-11 13:30 root         DEBUG    Init command: mock, -r, /var/lib/copr-rpmbuild/results/configs/child.cfg, --init
+10-11 13:30 root         DEBUG    Init output: INFO: mock.py version 5.2 starting (python version = 3.11.3, NVR = mock-5.2-1.fc38), args: /usr/libexec/mock/mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --init
+Start(bootstrap): init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish(bootstrap): init plugins
+Start: init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+Start: clean chroot
+INFO: unmounting tmpfs.
+Finish: clean chroot
+Mock Version: 5.2
+INFO: Mock Version: 5.2
+Start(bootstrap): chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start(bootstrap): cleaning package manager metadata
+Finish(bootstrap): cleaning package manager metadata
+INFO: Package manager dnf detected and used (fallback)
+Finish(bootstrap): chroot init
+Start: chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+Start: unpacking root cache
+Finish: unpacking root cache
+INFO: enabled package manager cache
+Start: cleaning package manager metadata
+Finish: cleaning package manager metadata
+INFO: enabled HW Info plugin
+INFO: Package manager dnf detected and used (direct choice)
+Finish: chroot init
+Finish: run
+ None
+NoneType: None
+10-11 13:30 root         INFO     Installing built package(s)
+10-11 13:30 root         DEBUG    --init command: mock, -r, /var/lib/copr-rpmbuild/results/configs/child.cfg, --no-cleanup-after, --no-clean, --resultdir=/var/lib/copr-rpmbuild/results/example/results, --init
+10-11 13:30 root         DEBUG    --init output: INFO: mock.py version 5.2 starting (python version = 3.11.3, NVR = mock-5.2-1.fc38), args: /usr/libexec/mock/mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean --resultdir=/var/lib/copr-rpmbuild/results/example/results --init
+Start(bootstrap): init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish(bootstrap): init plugins
+Start: init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+Mock Version: 5.2
+INFO: Mock Version: 5.2
+Start(bootstrap): chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start(bootstrap): cleaning package manager metadata
+Finish(bootstrap): cleaning package manager metadata
+INFO: Package manager dnf detected and used (fallback)
+Finish(bootstrap): chroot init
+Start: chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start: cleaning package manager metadata
+Finish: cleaning package manager metadata
+INFO: enabled HW Info plugin
+INFO: Package manager dnf detected and used (direct choice)
+Finish: chroot init
+Finish: run
+ None
+NoneType: None
+10-11 13:30 root         DEBUG        CheckPackageInstalls completed: 5.167 seconds
+10-11 13:30 root         DEBUG    Running check: CheckRpmlintInstalled
+10-11 13:30 root         DEBUG    --init command: mock, -r, /var/lib/copr-rpmbuild/results/configs/child.cfg, --no-cleanup-after, --no-clean, --resultdir=/var/lib/copr-rpmbuild/results/example/results, --init
+10-11 13:30 root         DEBUG    --init output: INFO: mock.py version 5.2 starting (python version = 3.11.3, NVR = mock-5.2-1.fc38), args: /usr/libexec/mock/mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean --resultdir=/var/lib/copr-rpmbuild/results/example/results --init
+Start(bootstrap): init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish(bootstrap): init plugins
+Start: init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+Mock Version: 5.2
+INFO: Mock Version: 5.2
+Start(bootstrap): chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start(bootstrap): cleaning package manager metadata
+Finish(bootstrap): cleaning package manager metadata
+INFO: Package manager dnf detected and used (fallback)
+Finish(bootstrap): chroot init
+Start: chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start: cleaning package manager metadata
+Finish: cleaning package manager metadata
+INFO: enabled HW Info plugin
+INFO: Package manager dnf detected and used (direct choice)
+Finish: chroot init
+Finish: run
+ None
+NoneType: None
+10-11 13:30 root         DEBUG    is_installed: Tested rpmlint, result: 1
+10-11 13:30 root         DEBUG     command: mock, -r, /var/lib/copr-rpmbuild/results/configs/child.cfg, --no-cleanup-after, --no-clean, --resultdir=/var/lib/copr-rpmbuild/results/example/results, --shell, 'rm -f /var/lib/rpm/__db*'
+10-11 13:30 root         DEBUG     output: INFO: mock.py version 5.2 starting (python version = 3.11.3, NVR = mock-5.2-1.fc38), args: /usr/libexec/mock/mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean --resultdir=/var/lib/copr-rpmbuild/results/example/results --shell ''"'"'rm -f /var/lib/rpm/__db*'"'"''
+Start(bootstrap): init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish(bootstrap): init plugins
+Start: init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+Start(bootstrap): chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start(bootstrap): cleaning package manager metadata
+Finish(bootstrap): cleaning package manager metadata
+INFO: Package manager dnf detected and used (fallback)
+Finish(bootstrap): chroot init
+Start: chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start: cleaning package manager metadata
+Finish: cleaning package manager metadata
+INFO: enabled HW Info plugin
+INFO: Package manager dnf detected and used (direct choice)
+Finish: chroot init
+Start: shell
+/bin/sh: line 1: rm -f /var/lib/rpm/__db*: No such file or directory
+Finish: shell
+Finish: run
+ None
+NoneType: None
+10-11 13:30 root         DEBUG    Install command: mock, -r, /var/lib/copr-rpmbuild/results/configs/child.cfg, --no-cleanup-after, --no-clean, --resultdir=/var/lib/copr-rpmbuild/results/example/results, install, rpmlint
+10-11 13:31 root         DEBUG    Install output: INFO: mock.py version 5.2 starting (python version = 3.11.3, NVR = mock-5.2-1.fc38), args: /usr/libexec/mock/mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean --resultdir=/var/lib/copr-rpmbuild/results/example/results install rpmlint
+Start(bootstrap): init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish(bootstrap): init plugins
+Start: init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+Mock Version: 5.2
+INFO: Mock Version: 5.2
+Start(bootstrap): chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start(bootstrap): cleaning package manager metadata
+Finish(bootstrap): cleaning package manager metadata
+INFO: Package manager dnf detected and used (fallback)
+Finish(bootstrap): chroot init
+Start: chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start: cleaning package manager metadata
+Finish: cleaning package manager metadata
+INFO: enabled HW Info plugin
+INFO: Package manager dnf detected and used (direct choice)
+Finish: chroot init
+INFO: installing package(s): rpmlint
+INFO: 
+Finish: run
+ None
+NoneType: None
+10-11 13:31 root         DEBUG    Script output: INFO: mock.py version 5.2 starting (python version = 3.11.3, NVR = mock-5.2-1.fc38), args: /usr/libexec/mock/mock --enable-network -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean --resultdir=/var/lib/copr-rpmbuild/results/example/results --chroot 'echo '"'"'rpmlint:'"'"'; rpmlint --installed example; echo '"'"'rpmlint-done:'"'"''
+Start(bootstrap): init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish(bootstrap): init plugins
+Start: init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+Mock Version: 5.2
+INFO: Mock Version: 5.2
+Start(bootstrap): chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start(bootstrap): cleaning package manager metadata
+Finish(bootstrap): cleaning package manager metadata
+INFO: Package manager dnf detected and used (fallback)
+Finish(bootstrap): chroot init
+Start: chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start: cleaning package manager metadata
+Finish: cleaning package manager metadata
+INFO: enabled HW Info plugin
+INFO: Package manager dnf detected and used (direct choice)
+Finish: chroot init
+INFO: Running in chroot: ["echo 'rpmlint:'; rpmlint --installed example; echo 'rpmlint-done:'"]
+Start: chroot ["echo 'rpmlint:'; rpmlint --installed example; echo 'rpmlint-done:'"]
+rpmlint:
+(none): E: there is no installed rpm "example".
+There are no files to process nor additional arguments.
+Nothing to do, aborting.
+============================ rpmlint session starts ============================
+rpmlint: 2.4.0
+configuration:
+    /usr/lib/python3.11/site-packages/rpmlint/configdefaults.toml
+    /etc/xdg/rpmlint/fedora-legacy-licenses.toml
+    /etc/xdg/rpmlint/fedora-spdx-licenses.toml
+    /etc/xdg/rpmlint/fedora.toml
+    /etc/xdg/rpmlint/scoring.toml
+    /etc/xdg/rpmlint/users-groups.toml
+    /etc/xdg/rpmlint/warn-on-functions.toml
+checks: 31, packages: 1
+
+ 0 packages and 0 specfiles checked; 0 errors, 0 warnings, 0 badness; has taken 0.0 s 
+rpmlint-done:
+Finish: chroot ["echo 'rpmlint:'; rpmlint --installed example; echo 'rpmlint-done:'"]
+Finish: run
+
+10-11 13:31 root         DEBUG        CheckRpmlintInstalled completed: 19.699 seconds
+10-11 13:31 root         DEBUG    Running check: CheckRpmlintDebuginfo
+10-11 13:31 root         DEBUG        CheckRpmlintDebuginfo completed: 0.001 seconds
+10-11 13:31 root         DEBUG    Running check: CheckInitDeps
+10-11 13:31 root         DEBUG        CheckInitDeps completed: 8.641 seconds
+10-11 13:31 root         DEBUG    Running check: CheckBuildCompleted
+10-11 13:31 root         DEBUG    Mock command: mock, -r, /var/lib/copr-rpmbuild/results/configs/child.cfg, --no-cleanup-after, --no-clean, --resultdir=/var/lib/copr-rpmbuild/results/example/results, --chroot, --, rm -rf $(rpm --eval %_builddir)/*
+10-11 13:31 root         DEBUG    Mock output: INFO: mock.py version 5.2 starting (python version = 3.11.3, NVR = mock-5.2-1.fc38), args: /usr/libexec/mock/mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean --resultdir=/var/lib/copr-rpmbuild/results/example/results --chroot -- 'rm -rf $(rpm --eval %_builddir)/*'
+Start(bootstrap): init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish(bootstrap): init plugins
+Start: init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+Mock Version: 5.2
+INFO: Mock Version: 5.2
+Start(bootstrap): chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start(bootstrap): cleaning package manager metadata
+Finish(bootstrap): cleaning package manager metadata
+INFO: Package manager dnf detected and used (fallback)
+Finish(bootstrap): chroot init
+Start: chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start: cleaning package manager metadata
+Finish: cleaning package manager metadata
+INFO: enabled HW Info plugin
+INFO: Package manager dnf detected and used (direct choice)
+Finish: chroot init
+INFO: Running in chroot: ['rm -rf $(rpm --eval %_builddir)/*']
+Start: chroot ['rm -rf $(rpm --eval %_builddir)/*']
+Finish: chroot ['rm -rf $(rpm --eval %_builddir)/*']
+Finish: run
+ None
+NoneType: None
+10-11 13:31 root         DEBUG    Mock command: mock, -r, /var/lib/copr-rpmbuild/results/configs/child.cfg, --no-cleanup-after, --no-clean, --resultdir=/var/lib/copr-rpmbuild/results/example/results, --copyin, /var/lib/copr-rpmbuild/results/example-1.0.14-1.fc37.src.rpm, example-1.0.14-1.fc37.src.rpm
+10-11 13:31 root         DEBUG    Mock output: INFO: mock.py version 5.2 starting (python version = 3.11.3, NVR = mock-5.2-1.fc38), args: /usr/libexec/mock/mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean --resultdir=/var/lib/copr-rpmbuild/results/example/results --copyin /var/lib/copr-rpmbuild/results/example-1.0.14-1.fc37.src.rpm example-1.0.14-1.fc37.src.rpm
+Start(bootstrap): init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish(bootstrap): init plugins
+Start: init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+Mock Version: 5.2
+INFO: Mock Version: 5.2
+Start(bootstrap): chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start(bootstrap): cleaning package manager metadata
+Finish(bootstrap): cleaning package manager metadata
+INFO: Package manager dnf detected and used (fallback)
+Finish(bootstrap): chroot init
+Start: chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start: cleaning package manager metadata
+Finish: cleaning package manager metadata
+INFO: enabled HW Info plugin
+INFO: Package manager dnf detected and used (direct choice)
+Finish: chroot init
+INFO: copying /var/lib/copr-rpmbuild/results/example-1.0.14-1.fc37.src.rpm to /var/lib/mock/fedora-37-x86_64/root/example-1.0.14-1.fc37.src.rpm
+Finish: run
+ None
+NoneType: None
+10-11 13:31 root         DEBUG    Mock command: mock, -r, /var/lib/copr-rpmbuild/results/configs/child.cfg, --no-cleanup-after, --no-clean, --resultdir=/var/lib/copr-rpmbuild/results/example/results, --chroot, --, rpm -i example-1.0.14-1.fc37.src.rpm; rpmbuild --nodeps -bp $(rpm --eval %_specdir)/example.spec;chmod -R  go+r  $(rpm --eval %_builddir)/* || :
+10-11 13:31 root         DEBUG    Mock output: INFO: mock.py version 5.2 starting (python version = 3.11.3, NVR = mock-5.2-1.fc38), args: /usr/libexec/mock/mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean --resultdir=/var/lib/copr-rpmbuild/results/example/results --chroot -- 'rpm -i example-1.0.14-1.fc37.src.rpm; rpmbuild --nodeps -bp $(rpm --eval %_specdir)/example.spec;chmod -R  go+r  $(rpm --eval %_builddir)/* || :'
+Start(bootstrap): init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish(bootstrap): init plugins
+Start: init plugins
+INFO: tmpfs initialized
+INFO: selinux enabled
+INFO: chroot_scan: initialized
+INFO: compress_logs: initialized
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+Mock Version: 5.2
+INFO: Mock Version: 5.2
+Start(bootstrap): chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64-bootstrap/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start(bootstrap): cleaning package manager metadata
+Finish(bootstrap): cleaning package manager metadata
+INFO: Package manager dnf detected and used (fallback)
+Finish(bootstrap): chroot init
+Start: chroot init
+INFO: mounting tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: reusing tmpfs at /var/lib/mock/fedora-37-x86_64/root.
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start: cleaning package manager metadata
+Finish: cleaning package manager metadata
+INFO: enabled HW Info plugin
+INFO: Package manager dnf detected and used (direct choice)
+Finish: chroot init
+INFO: Running in chroot: ['rpm -i example-1.0.14-1.fc37.src.rpm; rpmbuild --nodeps -bp $(rpm --eval %_specdir)/example.spec;chmod -R  go+r  $(rpm --eval %_builddir)/* || :']
+Start: chroot ['rpm -i example-1.0.14-1.fc37.src.rpm; rpmbuild --nodeps -bp $(rpm --eval %_specdir)/example.spec;chmod -R  go+r  $(rpm --eval %_builddir)/* || :']
+setting SOURCE_DATE_EPOCH=1561334400
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.OTSN8k
++ umask 022
++ cd /builddir/build/BUILD
++ cd /builddir/build/BUILD
++ rm -rf example-1.0.14
++ /usr/lib/rpm/rpmuncompress -x /builddir/build/SOURCES/example-1.0.14.tar.gz
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd example-1.0.14
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Finish: chroot ['rpm -i example-1.0.14-1.fc37.src.rpm; rpmbuild --nodeps -bp $(rpm --eval %_specdir)/example.spec;chmod -R  go+r  $(rpm --eval %_builddir)/* || :']
+Finish: run
+ None
+NoneType: None
+10-11 13:31 root         DEBUG    _topdir: /builddir/build
+10-11 13:31 root         INFO     Reading configuration from /etc/mock/site-defaults.cfg
+10-11 13:31 root         INFO     Reading configuration from /etc/mock/chroot-aliases.cfg
+10-11 13:31 root         INFO     Reading configuration from /var/lib/copr-rpmbuild/results/configs/child.cfg
+10-11 13:31 root         INFO     WARNING: Probably non-rawhide buildroot used. Rawhide should be used for most package reviews
+10-11 13:31 root         INFO     Active plugins: C/C++, Generic, Shell-api
+10-11 13:31 root         DEBUG        CheckBuildCompleted completed: 8.741 seconds
+10-11 13:31 root         DEBUG    Skipping CheckExcludeArch in /usr/lib/python3.11/site-packages/FedoraReview/plugins/generic.py, deprecated by generic-excludearch in /usr/share/fedora-review/scripts/generic-excludearch.sh
+10-11 13:31 root         DEBUG    Skipping CheckLargeDocs in /usr/lib/python3.11/site-packages/FedoraReview/plugins/generic.py, deprecated by generic-large-docs in /usr/share/fedora-review/scripts/generic-large-docs.sh
+10-11 13:31 root         DEBUG    Skipping CheckDesktopFile in /usr/lib/python3.11/site-packages/FedoraReview/plugins/generic.py, deprecated by fonts-disable in /usr/share/fedora-review/scripts/fonts-disable.sh
+10-11 13:31 root         DEBUG    Skipping CheckSystemdScripts in /usr/lib/python3.11/site-packages/FedoraReview/plugins/generic.py, deprecated by fonts-disable in /usr/share/fedora-review/scripts/fonts-disable.sh
+10-11 13:31 root         DEBUG    Skipping CheckClean in /usr/lib/python3.11/site-packages/FedoraReview/plugins/generic_should.py, deprecated by fonts-disable in /usr/share/fedora-review/scripts/fonts-disable.sh
+10-11 13:31 root         DEBUG    Skipping CheckFullVerReqSub in /usr/lib/python3.11/site-packages/FedoraReview/plugins/generic_should.py, deprecated by fonts-disable in /usr/share/fedora-review/scripts/fonts-disable.sh
+10-11 13:31 root         DEBUG    Running check: OcamlCheckStaticLibs
+10-11 13:31 root         DEBUG        OcamlCheckStaticLibs completed: 0.003 seconds
+10-11 13:31 root         DEBUG    Running check: HaskellCheckStaticLibs
+10-11 13:31 root         DEBUG        HaskellCheckStaticLibs completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CreateEnvCheck
+10-11 13:31 root         DEBUG        CreateEnvCheck completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: RCheckBuildRequires
+10-11 13:31 root         DEBUG        RCheckBuildRequires completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: RCheckCheckMacro
+10-11 13:31 root         DEBUG        RCheckCheckMacro completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: RCheckDoc
+10-11 13:31 root         DEBUG        RCheckDoc completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: RCheckInstallSection
+10-11 13:31 root         DEBUG        RCheckInstallSection completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: RCheckLatestVersionIsPackaged
+10-11 13:31 root         DEBUG        RCheckLatestVersionIsPackaged completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: RCheckRequires
+10-11 13:31 root         DEBUG        RCheckRequires completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckBundledGnulib
+10-11 13:31 root         DEBUG        CheckBundledGnulib completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckGccBuildRequires
+10-11 13:31 root         DEBUG        CheckGccBuildRequires completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckHeaderFiles
+10-11 13:31 root         DEBUG        CheckHeaderFiles completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckLDConfig
+10-11 13:31 root         DEBUG        CheckLDConfig completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckLibToolArchives
+10-11 13:31 root         DEBUG        CheckLibToolArchives completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckNoKernelModules
+10-11 13:31 root         DEBUG        CheckNoKernelModules completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckNoStaticExecutables
+10-11 13:31 root         DEBUG    Run command: env -i bash -c "source ./review-env.sh; unpack_rpms"
+10-11 13:31 root         DEBUG    Run command: file ./rpms-unpacked/example-1.0.14-1.fc37.x86_64.rpm/usr/lib/.build-id/a2/726b3faed894b042c1a887d5abfebd0dfe50bb
+10-11 13:31 root         DEBUG    Run command: file ./rpms-unpacked/example-1.0.14-1.fc37.x86_64.rpm/usr/sbin/main
+10-11 13:31 root         DEBUG        CheckNoStaticExecutables completed: 0.016 seconds
+10-11 13:31 root         DEBUG    Running check: CheckRPATH
+10-11 13:31 root         DEBUG        CheckRPATH completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckSoFiles
+10-11 13:31 root         DEBUG        CheckSoFiles completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckJavaPlugin
+10-11 13:31 root         DEBUG        CheckJavaPlugin completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: PerlCheckBuildRequires
+10-11 13:31 root         DEBUG        PerlCheckBuildRequires completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckPythonBuildRequires
+10-11 13:31 root         DEBUG        CheckPythonBuildRequires completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckPythonRequires
+10-11 13:31 root         DEBUG        CheckPythonRequires completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckPythonX_Site
+10-11 13:31 root         DEBUG        CheckPythonX_Site completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckApprovedLicense
+10-11 13:31 root         DEBUG        CheckApprovedLicense completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckBuildrootMacros
+10-11 13:31 root         DEBUG        CheckBuildrootMacros completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckBundledLibs
+10-11 13:31 root         DEBUG        CheckBundledLibs completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckChangelogFormat
+10-11 13:31 root         DEBUG        CheckChangelogFormat completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckCleanBuildroot
+10-11 13:31 root         DEBUG    regex: rm\s+\-[rf][rf]\s+(/rpmbuild/BUILDROOT/example-1.0.14-1.fc38.x86_64|\$RPM_BUILD_ROOT)[^/]
+10-11 13:31 root         DEBUG    install_sec: 
+install -d /rpmbuild/BUILDROOT/example-1.0.14-1.fc38.x86_64/usr/sbin
+cp -a main /rpmbuild/BUILDROOT/example-1.0.14-1.fc38.x86_64/usr/sbin/main
+
+
+
+10-11 13:31 root         DEBUG        CheckCleanBuildroot completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckCodeAndContent
+10-11 13:31 root         DEBUG        CheckCodeAndContent completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckConfigNoReplace
+10-11 13:31 root         DEBUG        CheckConfigNoReplace completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckDefattr
+10-11 13:31 root         DEBUG        CheckDefattr completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckDescMacros
+10-11 13:31 root         DEBUG        CheckDescMacros completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckDesktopFile
+10-11 13:31 root         DEBUG        CheckDesktopFile completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckDesktopFileInstall
+10-11 13:31 root         DEBUG        CheckDesktopFileInstall completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckDevelFilesInDevel
+10-11 13:31 root         DEBUG        CheckDevelFilesInDevel completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckDirectoryRequire
+10-11 13:31 root         DEBUG    Running: mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean -qn --enable-network shell -- dnf-3 repoquery -C -l filesystem
+10-11 13:31 root         DEBUG        CheckDirectoryRequire completed: 2.862 seconds
+10-11 13:31 root         DEBUG    Running check: CheckDistTag
+10-11 13:31 root         DEBUG        CheckDistTag completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckDocRuntime
+10-11 13:31 root         DEBUG        CheckDocRuntime completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckFileDuplicates
+10-11 13:31 root         DEBUG        CheckFileDuplicates completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckFilePermissions
+10-11 13:31 root         DEBUG        CheckFilePermissions completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckGconfSchemaInstall
+10-11 13:31 root         DEBUG        CheckGconfSchemaInstall completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckGdkPixbufLoaders
+10-11 13:31 root         DEBUG        CheckGdkPixbufLoaders completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckGioQueryModules
+10-11 13:31 root         DEBUG        CheckGioQueryModules completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckGlibCompileSchemas
+10-11 13:31 root         DEBUG        CheckGlibCompileSchemas completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckGtkQueryModules
+10-11 13:31 root         DEBUG        CheckGtkQueryModules completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckGuidelines
+10-11 13:31 root         DEBUG        CheckGuidelines completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckIfDepsDeprecated
+10-11 13:31 root         DEBUG    Running: mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean -qn --enable-network shell -- dnf-3 repoquery -q -C --whatprovides "gcc"
+10-11 13:31 root         DEBUG    Running: mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean -qn --enable-network shell -- dnf-3 repoquery -q -C --whatprovides "rtld(GNU_HASH)"
+10-11 13:31 root         DEBUG    Running: mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean -qn --enable-network shell -- dnf-3 repoquery -q -C --whatprovides "libc.so.6()(64bit)"
+10-11 13:31 root         DEBUG    Running: mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean -qn --enable-network shell -- dnf-3 repoquery -q -C --whatprovides "libc.so.6(GLIBC_2.34)(64bit)"
+10-11 13:31 root         DEBUG    Running: mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean -qn --enable-network shell -- dnf-3 repoquery -q -C --provides glibc
+10-11 13:31 root         DEBUG    Running: mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean -qn --enable-network shell -- dnf-3 repoquery -q -C --provides gcc
+10-11 13:31 root         DEBUG        CheckIfDepsDeprecated completed: 16.943 seconds
+10-11 13:31 root         DEBUG    Running check: CheckLicensInDoc
+10-11 13:31 root         DEBUG        CheckLicensInDoc completed: 0.001 seconds
+10-11 13:31 root         DEBUG    Running check: CheckLicenseField
+10-11 13:31 root         DEBUG    Scanning sources in /var/lib/mock/fedora-37-x86_64/root/builddir/build/BUILD/example-1.0.14
+10-11 13:31 root         DEBUG    Got license reply, length: 915
+10-11 13:31 root         DEBUG        CheckLicenseField completed: 1.008 seconds
+10-11 13:31 root         DEBUG    Running check: CheckLicenseFieldSPDX
+10-11 13:31 root         DEBUG    Run command: ['license-validate', '-v', 'GPLv2+']
+10-11 13:31 root         DEBUG    Run command: ['license-validate', '-v', '--old', 'GPLv2+']
+10-11 13:31 root         DEBUG        CheckLicenseFieldSPDX completed: 0.373 seconds
+10-11 13:31 root         DEBUG    Running check: CheckLicenseInSubpackages
+10-11 13:31 root         DEBUG        CheckLicenseInSubpackages completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckLocale
+10-11 13:31 root         DEBUG        CheckLocale completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckMacros
+10-11 13:31 root         DEBUG        CheckMacros completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckMakeinstall
+10-11 13:31 root         DEBUG        CheckMakeinstall completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckMultipleLicenses
+10-11 13:31 root         DEBUG        CheckMultipleLicenses completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckNameCharset
+10-11 13:31 root         DEBUG        CheckNameCharset completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckNaming
+10-11 13:31 root         DEBUG        CheckNaming completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckNoConfigInUsr
+10-11 13:31 root         DEBUG        CheckNoConfigInUsr completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckNoConflicts
+10-11 13:31 root         DEBUG        CheckNoConflicts completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckNoNameConflict
+10-11 13:31 root         DEBUG        CheckNoNameConflict completed: 0.359 seconds
+10-11 13:31 root         DEBUG    Running check: CheckObeysFHS
+10-11 13:31 root         DEBUG        CheckObeysFHS completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckObsoletesForRename
+10-11 13:31 root         DEBUG        CheckObsoletesForRename completed: 0.000 seconds
+10-11 13:31 root         DEBUG    Running check: CheckOwnDirs
+10-11 13:31 root         DEBUG    Running: mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean -qn --enable-network shell -- dnf-3 repoquery -q -C --whatprovides "rtld(GNU_HASH)"
+10-11 13:31 root         DEBUG    Running: mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean -qn --enable-network shell -- dnf-3 repoquery -q -C --whatprovides "libc.so.6()(64bit)"
+10-11 13:31 root         DEBUG    Running: mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean -qn --enable-network shell -- dnf-3 repoquery -q -C --whatprovides "libc.so.6(GLIBC_2.34)(64bit)"
+10-11 13:31 root         DEBUG    Running: mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean -qn --enable-network shell -- dnf-3 repoquery -q -C --requires --resolve glibc
+10-11 13:32 root         DEBUG    Running: mock -r /var/lib/copr-rpmbuild/results/configs/child.cfg --no-cleanup-after --no-clean -qn --enable-network shell -- dnf-3 repoquery -C -l glibc-langpack-bho glibc-langpack-fa glibc-langpack-ckb glibc-langpack-kl glibc-langpack-ml glibc-langpack-cmn glibc-langpack-gez glibc-langpack-hy glibc-langpack-nb glibc-langpack-to basesystem glibc-langpack-ast glibc-langpack-yi glibc-langpack-lg glibc-langpack-sd glibc-langpack-chr glibc-langpack-mai glibc-langpack-mi glibc-langpack-th libgcc glibc-langpack-ga glibc-langpack-mg glibc-langpack-sgs glibc-langpack-ko glibc-langpack-uz glibc-langpack-pap glibc-langpack-kok glibc-langpack-sr glibc-langpack-tr glibc-langpack-am glibc-langpack-az glibc-langpack-bg glibc-langpack-kab glibc-langpack-nhn glibc-langpack-shn glibc-langpack-es glibc-langpack-my glibc-langpack-en glibc-langpack-lo glibc-langpack-lzh glibc-langpack-af glibc-langpack-gu glibc-langpack-mni glibc-langpack-ar glibc-all-langpacks glibc-langpack-ca glibc-langpack-raj glibc-langpack-fo glibc-langpack-lij glibc-langpack-rif glibc-langpack-mhr glibc-langpack-ru glibc-langpack-hsb glibc-langpack-ur glibc-langpack-rw glibc-langpack-tk glibc-langpack-szl glibc-langpack-bo glibc-langpack-ts glibc-langpack-pa glibc-langpack-tn glibc-langpack-ak glibc-langpack-lt glibc-langpack-crh glibc-langpack-the glibc-langpack-tig glibc-langpack-ta glibc-langpack-hu glibc-langpack-hi glibc-langpack-tpi glibc-langpack-wo glibc-langpack-km glibc-langpack-mjw glibc-langpack-cy glibc-langpack-bs glibc-langpack-fy glibc-langpack-fur glibc-langpack-mr glibc-langpack-ht glibc-langpack-as glibc-langpack-or glibc-langpack-gl glibc-langpack-ln glibc-langpack-mk glibc-langpack-wa glibc-langpack-ayc glibc-langpack-tcy glibc-langpack-ik glibc-langpack-ia glibc-langpack-yuw glibc-langpack-se glibc-langpack-sat glibc-langpack-ks glibc-langpack-fil glibc-langpack-unm glibc-langpack-hak glibc-langpack-zh glibc-langpack-dsb glibc-langpack-anp glibc-langpack-nso glibc-langpack-ug glibc-langpack-he glibc-langpack-st glibc-langpack-li glibc-langpack-byn glibc-langpack-bhb glibc-langpack-tg glibc-langpack-tt glibc-langpack-an glibc-langpack-mt glibc-langpack-et glibc-langpack-sv glibc-langpack-ms glibc-langpack-sid glibc-langpack-sa glibc-langpack-be glibc-langpack-brx glibc-langpack-is glibc-langpack-nan glibc-langpack-wae glibc-langpack-syr glibc-langpack-nds glibc-langpack-yue glibc-minimal-langpack glibc-langpack-ky glibc-langpack-nn glibc-langpack-gv glibc-langpack-cv glibc-langpack-om glibc-langpack-yo glibc-langpack-csb glibc-common glibc-langpack-kw glibc-langpack-vi glibc-langpack-hr glibc-langpack-oc glibc-langpack-ps glibc-langpack-sah glibc-langpack-sl glibc-langpack-sm glibc-langpack-ig glibc-langpack-tl glibc-langpack-hif glibc-langpack-bn glibc-langpack-dv glibc-langpack-iu glibc-langpack-nl glibc-langpack-quz glibc-langpack-sq glibc-langpack-kn glibc-langpack-dz glibc-langpack-mn glibc-langpack-br glibc-langpack-ff glibc-langpack-ti glibc-langpack-ro glibc-langpack-os glibc-langpack-ku glibc-langpack-mag glibc-langpack-ber glibc-langpack-uk glibc-langpack-xh filesystem glibc-langpack-eu glibc-langpack-cs glibc-langpack-pl glibc-langpack-miq glibc glibc-langpack-fi glibc-langpack-hne glibc-langpack-bi glibc-langpack-wal glibc-langpack-da glibc-gconv-extra glibc-langpack-ha glibc-langpack-ne glibc-langpack-ve glibc-langpack-ce glibc-langpack-ka glibc-langpack-lv glibc-langpack-agr glibc-langpack-id glibc-langpack-pt glibc-langpack-shs glibc-langpack-zu glibc-langpack-mnw glibc-langpack-kk glibc-langpack-aa glibc-langpack-si glibc-langpack-mfe glibc-langpack-el glibc-langpack-ja glibc-langpack-sk glibc-langpack-nr glibc-langpack-sc glibc-langpack-so glibc-langpack-de glibc-langpack-it glibc-langpack-doi glibc-langpack-fr glibc-langpack-ss glibc-langpack-eo glibc-langpack-bem glibc-langpack-te glibc-langpack-niu glibc-langpack-lb glibc-langpack-sw glibc-langpack-gd
+10-11 13:32 root         DEBUG        CheckOwnDirs completed: 14.567 seconds
+10-11 13:32 root         DEBUG    Running check: CheckOwnOther
+10-11 13:32 root         DEBUG        CheckOwnOther completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckRelocatable
+10-11 13:32 root         DEBUG        CheckRelocatable completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckRequires
+10-11 13:32 root         DEBUG        CheckRequires completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckSourceMD5
+10-11 13:32 root         DEBUG    Skipping md5-test for /var/lib/copr-rpmbuild/results/example/srpm-unpacked/example-1.0.14.tar.gz
+10-11 13:32 root         DEBUG        CheckSourceMD5 completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckSourcedirMacroUse
+10-11 13:32 root         DEBUG        CheckSourcedirMacroUse completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckSpecLegibility
+10-11 13:32 root         DEBUG        CheckSpecLegibility completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckSpecName
+10-11 13:32 root         DEBUG        CheckSpecName completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckStaticLibs
+10-11 13:32 root         DEBUG        CheckStaticLibs completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckSystemdUnitdirScriplets
+10-11 13:32 root         DEBUG        CheckSystemdUnitdirScriplets completed: 0.001 seconds
+10-11 13:32 root         DEBUG    Running check: CheckSystemdUserunitdirScriplets
+10-11 13:32 root         DEBUG        CheckSystemdUserunitdirScriplets completed: 0.001 seconds
+10-11 13:32 root         DEBUG    Running check: CheckUTF8Filenames
+10-11 13:32 root         DEBUG        CheckUTF8Filenames completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckUpdateIconCache
+10-11 13:32 root         DEBUG        CheckUpdateIconCache completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckUsefulDebuginfo
+10-11 13:32 root         DEBUG        CheckUsefulDebuginfo completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckBuildInMock
+10-11 13:32 root         DEBUG        CheckBuildInMock completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckBuildroot
+10-11 13:32 root         DEBUG        CheckBuildroot completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckBundledFonts
+10-11 13:32 root         DEBUG        CheckBundledFonts completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckClean
+10-11 13:32 root         DEBUG        CheckClean completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckContainsLicenseText
+10-11 13:32 root         DEBUG        CheckContainsLicenseText completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckFileRequires
+10-11 13:32 root         DEBUG        CheckFileRequires completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckFinalRequiresProvides
+10-11 13:32 root         DEBUG        CheckFinalRequiresProvides completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckFullVerReqSub
+10-11 13:32 root         DEBUG        CheckFullVerReqSub completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckFunctionAsDescribed
+10-11 13:32 root         DEBUG        CheckFunctionAsDescribed completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckIllegalSpecTags
+10-11 13:32 root         DEBUG        CheckIllegalSpecTags completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckLatestVersionIsPackaged
+10-11 13:32 root         DEBUG        CheckLatestVersionIsPackaged completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckLicenseUpstream
+10-11 13:32 root         DEBUG        CheckLicenseUpstream completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckManPages
+10-11 13:32 root         DEBUG        CheckManPages completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckParallelMake
+10-11 13:32 root         DEBUG        CheckParallelMake completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckPatchComments
+10-11 13:32 root         DEBUG        CheckPatchComments completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckPkgConfigFiles
+10-11 13:32 root         DEBUG        CheckPkgConfigFiles completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckRubyPlugin
+10-11 13:32 root         DEBUG        CheckRubyPlugin completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckScriptletSanity
+10-11 13:32 root         DEBUG        CheckScriptletSanity completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckSourceComment
+10-11 13:32 root         DEBUG        CheckSourceComment completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckSourceDownloads
+10-11 13:32 root         DEBUG        CheckSourceDownloads completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckSourceUrl
+10-11 13:32 root         DEBUG        CheckSourceUrl completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckSourceVerification
+10-11 13:32 root         DEBUG        CheckSourceVerification completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckSpecAsInSRPM
+10-11 13:32 root         DEBUG        CheckSpecAsInSRPM completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckSupportAllArchs
+10-11 13:32 root         DEBUG        CheckSupportAllArchs completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckTestSuites
+10-11 13:32 root         DEBUG        CheckTestSuites completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckTimeStamps
+10-11 13:32 root         DEBUG        CheckTimeStamps completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckTmpfiles
+10-11 13:32 root         DEBUG        CheckTmpfiles completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckUpdateMimeDatabase
+10-11 13:32 root         DEBUG        CheckUpdateMimeDatabase completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckUseGlobal
+10-11 13:32 root         DEBUG        CheckUseGlobal completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: SugarActivityCheckBuildRequires
+10-11 13:32 root         DEBUG        SugarActivityCheckBuildRequires completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: SugarActivityCheckNaming
+10-11 13:32 root         DEBUG        SugarActivityCheckNaming completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: SugarActivityCheckRuntimeDeps
+10-11 13:32 root         DEBUG        SugarActivityCheckRuntimeDeps completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckAddMavenDepmap
+10-11 13:32 root         DEBUG        CheckAddMavenDepmap completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckBundledJars
+10-11 13:32 root         DEBUG        CheckBundledJars completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckJPackageRequires
+10-11 13:32 root         DEBUG        CheckJPackageRequires completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckJavadoc
+10-11 13:32 root         DEBUG        CheckJavadoc completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckJavadocJPackageRequires
+10-11 13:32 root         DEBUG        CheckJavadocJPackageRequires completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckJavadocdirName
+10-11 13:32 root         DEBUG        CheckJavadocdirName completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckMvnRpmbuild
+10-11 13:32 root         DEBUG        CheckMvnRpmbuild completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckNewStyleMaven
+10-11 13:32 root         DEBUG        CheckNewStyleMaven completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckNoArch
+10-11 13:32 root         DEBUG        CheckNoArch completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckNoOldMavenDepmap
+10-11 13:32 root         DEBUG        CheckNoOldMavenDepmap completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckNoRequiresPost
+10-11 13:32 root         DEBUG        CheckNoRequiresPost completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckNotJavaApplicable
+10-11 13:32 root         DEBUG        CheckNotJavaApplicable completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckPomInstalled
+10-11 13:32 root         DEBUG        CheckPomInstalled completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckTestSkip
+10-11 13:32 root         DEBUG        CheckTestSkip completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckUpdateDepmap
+10-11 13:32 root         DEBUG        CheckUpdateDepmap completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckUpstremBuildMethod
+10-11 13:32 root         DEBUG        CheckUpstremBuildMethod completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckUseMavenpomdirMacro
+10-11 13:32 root         DEBUG        CheckUseMavenpomdirMacro completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckAutotoolsObsoletedMacros
+10-11 13:32 root         DEBUG    autotools used: 
+10-11 13:32 root         DEBUG        CheckAutotoolsObsoletedMacros completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: fonts-disable
+10-11 13:32 root         DEBUG        fonts-disable completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: generic-excludearch
+10-11 13:32 root         INFO      ExclusiveArch dependency checking disabled, enable with EXARCH flag
+
+10-11 13:32 root         DEBUG        generic-excludearch completed: 0.004 seconds
+10-11 13:32 root         DEBUG    Running check: generic-large-docs
+10-11 13:32 root         WARNING  Illegal return from /usr/share/fedora-review/scripts/generic-large-docs.sh, code 80, output: stdout:Documentation size is 0 bytes in 0 files.
+ stderr:/usr/share/fedora-review/scripts/generic-large-docs.sh: line 23: bc: command not found
+
+10-11 13:32 root         DEBUG        generic-large-docs completed: 0.006 seconds
+10-11 13:32 root         DEBUG    Running check: java-check-bundled-jars
+10-11 13:32 root         DEBUG        java-check-bundled-jars completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: fonts-fc-query
+10-11 13:32 root         DEBUG        fonts-fc-query completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: fonts-repo-audit
+10-11 13:32 root         DEBUG        fonts-repo-audit completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: generic-large-data
+10-11 13:32 root         DEBUG        generic-large-data completed: 0.005 seconds
+10-11 13:32 root         DEBUG    Running check: generic-srv-opt
+10-11 13:32 root         DEBUG        generic-srv-opt completed: 0.002 seconds
+10-11 13:32 root         DEBUG    Running check: perl-url-tag
+10-11 13:32 root         DEBUG        perl-url-tag completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: php-compatinfo
+10-11 13:32 root         DEBUG        php-compatinfo completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: python-check-eggs
+10-11 13:32 root         DEBUG        python-check-eggs completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: python-dont-download-deps
+10-11 13:32 root         DEBUG        python-dont-download-deps completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: python-egg-info
+10-11 13:32 root         DEBUG        python-egg-info completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: python-meet-guidelines
+10-11 13:32 root         DEBUG        python-meet-guidelines completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckBuildCompilerFlags
+10-11 13:32 root         DEBUG        CheckBuildCompilerFlags completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckDaemonCompileFlags
+10-11 13:32 root         DEBUG        CheckDaemonCompileFlags completed: 0.001 seconds
+10-11 13:32 root         DEBUG    Running check: CheckUpdateDesktopDatabase
+10-11 13:32 root         DEBUG        CheckUpdateDesktopDatabase completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Running check: CheckSystemdScripts
+10-11 13:32 root         DEBUG        CheckSystemdScripts completed: 0.000 seconds
+10-11 13:32 root         DEBUG    Report completed:  163.753 seconds
