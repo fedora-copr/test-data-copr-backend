@@ -1,0 +1,25 @@
+Checking: example-1.0.14-1.fc37.x86_64.rpm
+          example-1.0.14-1.fc37.src.rpm
+============================ rpmlint session starts ============================
+rpmlint: 2.4.0
+configuration:
+    /usr/lib/python3.11/site-packages/rpmlint/configdefaults.toml
+    /etc/xdg/rpmlint/fedora-legacy-licenses.toml
+    /etc/xdg/rpmlint/fedora-spdx-licenses.toml
+    /etc/xdg/rpmlint/fedora.toml
+    /etc/xdg/rpmlint/scoring.toml
+    /etc/xdg/rpmlint/users-groups.toml
+    /etc/xdg/rpmlint/warn-on-functions.toml
+rpmlintrc: [PosixPath('/tmp/tmpbszyjr7u')]
+checks: 31, packages: 2
+
+example.x86_64: W: unstripped-binary-or-object /usr/sbin/main
+example.x86_64: W: position-independent-executable-suggested /usr/sbin/main
+example.x86_64: W: no-manual-page-for-binary main
+example.x86_64: W: no-documentation
+example.src: W: name-repeated-in-summary example
+example.x86_64: W: name-repeated-in-summary example
+example.spec:3: W: mixed-use-of-spaces-and-tabs (spaces: line 2, tab: line 3)
+example.spec: W: invalid-url Source0: example-1.0.14.tar.gz
+ 2 packages and 0 specfiles checked; 0 errors, 8 warnings, 0 badness; has taken 0.1 s 
+

@@ -1,0 +1,14 @@
+
+*No copyright* GNU General Public License, Version 2
+----------------------------------------------------
+example-1.0.14/example.spec
+
+Unknown or generated
+--------------------
+example-1.0.14/.copr/Makefile
+example-1.0.14/.tito/packages/.readme
+example-1.0.14/.tito/packages/example
+example-1.0.14/.tito/tito.props
+example-1.0.14/Makefile
+example-1.0.14/README.md
+example-1.0.14/main.c

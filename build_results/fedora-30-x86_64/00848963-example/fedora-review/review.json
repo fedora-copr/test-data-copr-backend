@@ -1,0 +1,532 @@
+{
+  "issues": [
+    {
+      "result": "fail",
+      "text": "The License field must be a valid SPDX expression.",
+      "note": "Not a valid SPDX expression 'GPLv2+'. It seems that you are using the old Fedora license abbreviations. Try `license-fedora2spdx' for converting it to SPDX.",
+      "name": "CheckLicenseFieldSPDX",
+      "url": "https://fedoraproject.org/wiki/Changes/SPDX_Licenses_Phase_1"
+    }
+  ],
+  "results": {
+    "MUST": {
+      "C/C++": [
+        {
+          "result": "pass",
+          "text": "If your application is a C or C++ application you must list a BuildRequires against gcc, gcc-c++ or clang.",
+          "note": null,
+          "name": "CheckGccBuildRequires",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/C_and_C++/"
+        },
+        {
+          "result": "pass",
+          "text": "Package does not contain any libtool archives (.la)",
+          "note": null,
+          "name": "CheckLibToolArchives",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#packaging-static-libraries"
+        },
+        {
+          "result": "pending",
+          "text": "Package does not contain kernel modules.",
+          "note": null,
+          "name": "CheckNoKernelModules",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/what-can-be-packaged/#_no_external_kernel_modules"
+        },
+        {
+          "result": "pass",
+          "text": "Package contains no static executables.",
+          "note": null,
+          "name": "CheckNoStaticExecutables",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_statically_linking_executables"
+        },
+        {
+          "result": "pass",
+          "text": "Rpath absent or only used for internal libs.",
+          "note": null,
+          "name": "CheckRPATH",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_beware_of_rpath"
+        }
+      ],
+      "Generic": [
+        {
+          "result": "pending",
+          "text": "Package is licensed with an open-source compatible license and meets other legal requirements as defined in the legal section of Packaging Guidelines.",
+          "note": null,
+          "name": "CheckApprovedLicense",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/LicensingGuidelines/"
+        },
+        {
+          "result": "pending",
+          "text": "%build honors applicable compiler flags or justifies otherwise.",
+          "note": null,
+          "name": "CheckBuildCompilerFlags",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_compiler_flags"
+        },
+        {
+          "result": "pass",
+          "text": "Package uses either %{buildroot} or $RPM_BUILD_ROOT",
+          "note": null,
+          "name": "CheckBuildrootMacros",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_macros"
+        },
+        {
+          "result": "pending",
+          "text": "Package contains no bundled libraries without FPC exception.",
+          "note": null,
+          "name": "CheckBundledLibs",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#bundling"
+        },
+        {
+          "result": "pending",
+          "text": "Changelog in prescribed format.",
+          "note": null,
+          "name": "CheckChangelogFormat",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#changelogs"
+        },
+        {
+          "result": "pass",
+          "text": "Package does not run rm -rf %{buildroot} (or $RPM_BUILD_ROOT) at the beginning of %install.",
+          "note": null,
+          "name": "CheckCleanBuildroot",
+          "url": "(this test has no URL)"
+        },
+        {
+          "result": "pending",
+          "text": "Sources contain only permissible code or content.",
+          "note": null,
+          "name": "CheckCodeAndContent",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/what-can-be-packaged/#_impermissible_content"
+        },
+        {
+          "result": "pass",
+          "text": "Macros in Summary, %description expandable at SRPM build time.",
+          "note": null,
+          "name": "CheckDescMacros",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_source_rpm_buildtime_macros"
+        },
+        {
+          "result": "pending",
+          "text": "Package contains desktop file if it is a GUI application.",
+          "note": null,
+          "name": "CheckDesktopFile",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_desktop_files"
+        },
+        {
+          "result": "pending",
+          "text": "Development files must be in a -devel package",
+          "note": null,
+          "name": "CheckDevelFilesInDevel",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_devel_packages"
+        },
+        {
+          "result": "pass",
+          "text": "Package requires other packages for directories it uses.",
+          "note": null,
+          "name": "CheckDirectoryRequire",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_file_and_directory_ownership"
+        },
+        {
+          "result": "pass",
+          "text": "Dist tag is present.",
+          "note": null,
+          "name": "CheckDistTag",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/DistTag/"
+        },
+        {
+          "result": "pending",
+          "text": "Package uses nothing in %doc for runtime.",
+          "note": null,
+          "name": "CheckDocRuntime",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_documentation"
+        },
+        {
+          "result": "pass",
+          "text": "Package does not contain duplicates in %files.",
+          "note": null,
+          "name": "CheckFileDuplicates",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_duplicate_files"
+        },
+        {
+          "result": "pass",
+          "text": "Permissions on files are set properly.",
+          "note": null,
+          "name": "CheckFilePermissions",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_file_permissions"
+        },
+        {
+          "result": "pending",
+          "text": "Package complies to the Packaging Guidelines",
+          "note": null,
+          "name": "CheckGuidelines",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/"
+        },
+        {
+          "result": "pass",
+          "text": "Package must not depend on deprecated() packages.",
+          "note": null,
+          "name": "CheckIfDepsDeprecated",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/deprecating-packages/"
+        },
+        {
+          "result": "pending",
+          "text": "If (and only if) the source package includes the text of the license(s) in its own file, then that file, containing the text of the license(s) for the package is included in %license.",
+          "note": null,
+          "name": "CheckLicensInDoc",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/LicensingGuidelines/#_license_text"
+        },
+        {
+          "result": "pending",
+          "text": "License field in the package spec file matches the actual license.",
+          "note": "Checking patched sources after %prep for licenses. Licenses found: \"Unknown or generated\", \"*No copyright* GNU General Public License, Version 2\". 7 files have unknown license. Detailed output of licensecheck in /var/lib/copr-rpmbuild/results/example/licensecheck.txt",
+          "name": "CheckLicenseField",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/LicensingGuidelines/#_valid_license_short_names"
+        },
+        {
+          "result": "fail",
+          "text": "The License field must be a valid SPDX expression.",
+          "note": "Not a valid SPDX expression 'GPLv2+'. It seems that you are using the old Fedora license abbreviations. Try `license-fedora2spdx' for converting it to SPDX.",
+          "name": "CheckLicenseFieldSPDX",
+          "url": "https://fedoraproject.org/wiki/Changes/SPDX_Licenses_Phase_1"
+        },
+        {
+          "result": "pending",
+          "text": "Package consistently uses macros (instead of hard-coded directory names).",
+          "note": null,
+          "name": "CheckMacros",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_macros"
+        },
+        {
+          "result": "pass",
+          "text": "Package use %makeinstall only when make install DESTDIR=... doesn't work.",
+          "note": null,
+          "name": "CheckMakeinstall",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_why_the_makeinstall_macro_should_not_be_used"
+        },
+        {
+          "result": "pass",
+          "text": "Package is named using only allowed ASCII characters.",
+          "note": null,
+          "name": "CheckNameCharset",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/Naming/"
+        },
+        {
+          "result": "pending",
+          "text": "Package is named according to the Package Naming Guidelines.",
+          "note": null,
+          "name": "CheckNaming",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/Naming/"
+        },
+        {
+          "result": "pending",
+          "text": "Package does not generate any conflict.",
+          "note": null,
+          "name": "CheckNoConflicts",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_conflicts"
+        },
+        {
+          "result": "pass",
+          "text": "Package does not use a name that already exists.",
+          "note": null,
+          "name": "CheckNoNameConflict",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/Naming/#_conflicting_package_names"
+        },
+        {
+          "result": "pending",
+          "text": "Package obeys FHS, except libexecdir and /usr/target.",
+          "note": null,
+          "name": "CheckObeysFHS",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_filesystem_layout"
+        },
+        {
+          "result": "pending",
+          "text": "If the package is a rename of another package, proper Obsoletes and Provides are present.",
+          "note": null,
+          "name": "CheckObsoletesForRename",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#renaming-or-replacing-existing-packages"
+        },
+        {
+          "result": "pass",
+          "text": "Package must own all directories that it creates.",
+          "note": null,
+          "name": "CheckOwnDirs",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_file_and_directory_ownership"
+        },
+        {
+          "result": "pass",
+          "text": "Package does not own files or directories owned by other packages.",
+          "note": null,
+          "name": "CheckOwnOther",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_file_and_directory_ownership"
+        },
+        {
+          "result": "pass",
+          "text": "Package is not relocatable.",
+          "note": null,
+          "name": "CheckRelocatable",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_relocatable_packages"
+        },
+        {
+          "result": "pending",
+          "text": "Requires correct, justified where necessary.",
+          "note": null,
+          "name": "CheckRequires",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_explicit_requires"
+        },
+        {
+          "result": "pass",
+          "text": "Sources used to build the package match the upstream source, as provided in the spec URL.",
+          "note": null,
+          "name": "CheckSourceMD5",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/SourceURL/"
+        },
+        {
+          "result": "pending",
+          "text": "Spec file is legible and written in American English.",
+          "note": null,
+          "name": "CheckSpecLegibility",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_spec_legibility"
+        },
+        {
+          "result": "pass",
+          "text": "Spec file name must match the spec package %{name}, in the format %{name}.spec.",
+          "note": null,
+          "name": "CheckSpecName",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_spec_file_naming"
+        },
+        {
+          "result": "pending",
+          "text": "Package contains systemd file(s) if in need.",
+          "note": null,
+          "name": "CheckSystemdScripts",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/"
+        },
+        {
+          "result": "pass",
+          "text": "File names are valid UTF-8.",
+          "note": null,
+          "name": "CheckUTF8Filenames",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_non_ascii_filenames"
+        },
+        {
+          "result": "pending",
+          "text": "Useful -debuginfo package or justification otherwise.",
+          "note": null,
+          "name": "CheckUsefulDebuginfo",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_debuginfo_packages"
+        },
+        {
+          "result": "pending",
+          "text": "Package is not known to require an ExcludeArch tag.",
+          "note": null,
+          "name": "generic-excludearch",
+          "url": "https://fedoraproject.org/wiki/Architectures#ExcludeArch_.26_ExclusiveArch"
+        },
+        {
+          "result": "pending",
+          "text": "Large documentation must go in a -doc subpackage. Large could be size (~1MB) or number of files.",
+          "note": "Test run failed",
+          "name": "generic-large-docs",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_documentation"
+        },
+        {
+          "result": "pass",
+          "text": "Packages must not store files under /srv, /opt or /usr/local",
+          "note": null,
+          "name": "generic-srv-opt",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_documentation"
+        },
+        {
+          "result": "pending",
+          "text": "Package successfully compiles and builds into binary rpms on at least one supported primary architecture.",
+          "note": "Using prebuilt packages",
+          "name": "CheckBuild",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_architecture_support"
+        },
+        {
+          "result": "pass",
+          "text": "Package installs properly.",
+          "note": null,
+          "name": "CheckPackageInstalls",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/"
+        },
+        {
+          "result": "pass",
+          "text": "Rpmlint is run on all rpms the build produces.",
+          "note": "There are rpmlint messages (see attachment).",
+          "name": "CheckRpmlint",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_use_rpmlint"
+        }
+      ]
+    },
+    "SHOULD": {
+      "Generic": [
+        {
+          "result": "fail",
+          "text": "Reviewer should test that the package builds in mock.",
+          "note": null,
+          "name": "CheckBuildInMock",
+          "url": "https://fedoraproject.org/wiki/PackageMaintainers/MockTricks"
+        },
+        {
+          "result": "pass",
+          "text": "Buildroot is not present",
+          "note": null,
+          "name": "CheckBuildroot",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/"
+        },
+        {
+          "result": "pass",
+          "text": "Package has no %clean section with rm -rf %{buildroot} (or $RPM_BUILD_ROOT)",
+          "note": null,
+          "name": "CheckClean",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_tags_and_sections"
+        },
+        {
+          "result": "pending",
+          "text": "If the source package does not include license text(s) as a separate file from upstream, the packager SHOULD query upstream to include it.",
+          "note": null,
+          "name": "CheckContainsLicenseText",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/LicensingGuidelines/#_license_text"
+        },
+        {
+          "result": "pass",
+          "text": "No file requires outside of /etc, /bin, /sbin, /usr/bin, /usr/sbin.",
+          "note": null,
+          "name": "CheckFileRequires",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_file_and_directory_dependencies"
+        },
+        {
+          "result": "pending",
+          "text": "Final provides and requires are sane (see attachments).",
+          "note": null,
+          "name": "CheckFinalRequiresProvides",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/"
+        },
+        {
+          "result": "pending",
+          "text": "Package functions as described.",
+          "note": null,
+          "name": "CheckFunctionAsDescribed",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/"
+        },
+        {
+          "result": "pass",
+          "text": "Packager, Vendor, PreReq, Copyright tags should not be in spec file",
+          "note": null,
+          "name": "CheckIllegalSpecTags",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_tags_and_sections"
+        },
+        {
+          "result": "pending",
+          "text": "Latest version is packaged.",
+          "note": null,
+          "name": "CheckLatestVersionIsPackaged",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/"
+        },
+        {
+          "result": "pending",
+          "text": "Package does not include license text files separate from upstream.",
+          "note": null,
+          "name": "CheckLicenseUpstream",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/LicensingGuidelines/#_license_text"
+        },
+        {
+          "result": "pass",
+          "text": "Uses parallel make %{?_smp_mflags} macro.",
+          "note": null,
+          "name": "CheckParallelMake",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_parallel_make"
+        },
+        {
+          "result": "pending",
+          "text": "SourceX tarball generation or download is documented.",
+          "note": "Package contains tarball without URL, check comments",
+          "name": "CheckSourceComment",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/SourceURL/"
+        },
+        {
+          "result": "pass",
+          "text": "SourceX is a working URL.",
+          "note": null,
+          "name": "CheckSourceUrl",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/SourceURL/"
+        },
+        {
+          "result": "pending",
+          "text": "Sources are verified with gpgverify first in %prep if upstream publishes signatures.",
+          "note": "gpgverify is not used.",
+          "name": "CheckSourceVerification",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_source_file_verification"
+        },
+        {
+          "result": "pending",
+          "text": "Package should compile and build into binary rpms on all supported architectures.",
+          "note": null,
+          "name": "CheckSupportAllArchs",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_architecture_support"
+        },
+        {
+          "result": "pending",
+          "text": "%check is present and all tests pass.",
+          "note": null,
+          "name": "CheckTestSuites",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_test_suites"
+        },
+        {
+          "result": "pending",
+          "text": "Packages should try to preserve timestamps of original installed files.",
+          "note": null,
+          "name": "CheckTimeStamps",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_timestamps"
+        },
+        {
+          "result": "pass",
+          "text": "Spec use %global instead of %define unless justified.",
+          "note": null,
+          "name": "CheckUseGlobal",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_global_preferred_over_define"
+        }
+      ]
+    },
+    "EXTRA": {
+      "Generic": [
+        {
+          "result": "pass",
+          "text": "Large data in /usr/share should live in a noarch subpackage if package is arched.",
+          "note": null,
+          "name": "generic-large-data",
+          "url": "https://fedoraproject.org/wiki/Packaging:ReviewGuidelines#Package_Review_Guidelines"
+        },
+        {
+          "result": "pass",
+          "text": "Rpmlint is run on all installed packages.",
+          "note": "No rpmlint messages.",
+          "name": "CheckRpmlintInstalled",
+          "url": "https://docs.fedoraproject.org/en-US/packaging-guidelines/#_use_rpmlint"
+        }
+      ]
+    }
+  },
+  "attachments": [
+    {
+      "header": "Rpmlint",
+      "text": "Checking: example-1.0.14-1.fc37.x86_64.rpm\n          example-1.0.14-1.fc37.src.rpm\n============================ rpmlint session starts ============================\nrpmlint: 2.4.0\nconfiguration:\n    /usr/lib/python3.11/site-packages/rpmlint/configdefaults.toml\n    /etc/xdg/rpmlint/fedora-legacy-licenses.toml\n    /etc/xdg/rpmlint/fedora-spdx-licenses.toml\n    /etc/xdg/rpmlint/fedora.toml\n    /etc/xdg/rpmlint/scoring.toml\n    /etc/xdg/rpmlint/users-groups.toml\n    /etc/xdg/rpmlint/warn-on-functions.toml\nrpmlintrc: [PosixPath('/tmp/tmpbszyjr7u')]\nchecks: 31, packages: 2\n\nexample.x86_64: W: unstripped-binary-or-object /usr/sbin/main\nexample.x86_64: W: position-independent-executable-suggested /usr/sbin/main\nexample.x86_64: W: no-manual-page-for-binary main\nexample.x86_64: W: no-documentation\nexample.src: W: name-repeated-in-summary example\nexample.x86_64: W: name-repeated-in-summary example\nexample.spec:3: W: mixed-use-of-spaces-and-tabs (spaces: line 2, tab: line 3)\nexample.spec: W: invalid-url Source0: example-1.0.14.tar.gz\n 2 packages and 0 specfiles checked; 0 errors, 8 warnings, 0 badness; has taken 0.1 s \n\n\n"
+    },
+    {
+      "header": "Rpmlint (installed packages)",
+      "text": "(none): E: there is no installed rpm \"example\".\nThere are no files to process nor additional arguments.\nNothing to do, aborting.\n============================ rpmlint session starts ============================\nrpmlint: 2.4.0\nconfiguration:\n    /usr/lib/python3.11/site-packages/rpmlint/configdefaults.toml\n    /etc/xdg/rpmlint/fedora-legacy-licenses.toml\n    /etc/xdg/rpmlint/fedora-spdx-licenses.toml\n    /etc/xdg/rpmlint/fedora.toml\n    /etc/xdg/rpmlint/scoring.toml\n    /etc/xdg/rpmlint/users-groups.toml\n    /etc/xdg/rpmlint/warn-on-functions.toml\nchecks: 31, packages: 1\n\n 0 packages and 0 specfiles checked; 0 errors, 0 warnings, 0 badness; has taken 0.0 s \n\n"
+    },
+    {
+      "header": "",
+      "text": "Generated by fedora-review 0.10.0 (e79b66b) last change: 2023-07-24\nCommand line :/usr/bin/fedora-review --no-colors --prebuilt --rpm-spec --name example --mock-config /var/lib/copr-rpmbuild/results/configs/child.cfg\nBuildroot used: fedora-37-x86_64\nActive plugins: Generic, C/C++, Shell-api\nDisabled plugins: Perl, Java, SugarActivity, Haskell, R, fonts, Ocaml, PHP, Python\nDisabled flags: EXARCH, EPEL6, EPEL7, DISTTAG, BATCH\n"
+    },
+    {
+      "header": "Requires",
+      "text": "example (rpmlib, GLIBC filtered):\n    libc.so.6()(64bit)\n    rtld(GNU_HASH)\n\n"
+    },
+    {
+      "header": "Provides",
+      "text": "example:\n    example\n    example(x86-64)\n\n"
+    }
+  ]
+}
