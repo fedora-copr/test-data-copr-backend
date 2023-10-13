@@ -17,6 +17,7 @@ After making changes, tag a new release in this repository:
 
 ```
 git tag v4
+git push origin v4
 ```
 
 In the Copr repository, increment tests version in
